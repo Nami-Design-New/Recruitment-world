@@ -57,3 +57,99 @@ h6 {
     object-fit: contain;
   }
 }
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#ecommerceHero {
+  .mainData {
+    width: min(100% - 24px, 600px);
+  }
+
+  .ecommerce-home {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #000;
+      opacity: 0.4;
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      .display-4 {
+        color: #fff;
+      }
+    }
+  }
+}
+.btn-primary {
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.copyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 12px;
+  gap: 4px;
+  border-top: 1px solid #eee;
+  img {
+    height: 24px;
+    object-fit: contain;
+  }
+  a {
+    color: var(--mainColor);
+    display: flex;
+    align-items: end;
+    gap: 4px;
+  }
+}
+
+.insta-img {
+  width: 100%;
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+.footer-info .logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.blog{
+  .card{
+    height: 100%;
+    .img-fluid{
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+  }
+}

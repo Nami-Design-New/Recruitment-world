@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <meta charset="utf-8">
     <title>Recruitment world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +9,20 @@
     <meta content="Nami" name="author">
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/fav.svg">
-
     <!--Swiper slider css-->
     <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
-
+    <!--font Awesome -->
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap Css -->
     <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- App Css-->
     <!-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/css/appAR.css" rel="stylesheet" type="text/css">
     <!-- custom Css-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -66,7 +63,6 @@
                                         height="18">
                                     <span class="align-middle">English</span>
                                 </a>
-
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sa"
                                     title="Arabic">
@@ -99,24 +95,24 @@
                     <img src="assets/images/logoV-light.svg" alt="">
                 </div>
             </a>
-
+            <!-- main links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0" id="navigation-menu">
-
                     <li class="nav-item">
                         <a class="nav-link" href="index.html"> الرئيسية </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"> مكاتب الاستقدام </a>
+                        <a class="nav-link" href="#!"> مكاتب الاستقدام </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!"> طلب استقدام </a>
+                    </li>
                     <li class="nav-item dropdown dropdown-hover">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             الدعم
                         </a>
                         <ul class="dropdown-menu dropdown-menu-md dropdown-menu-center dropdown-menu-list submenu">
-
                             <li class="nav-item">
                                 <a href="#!" class="nav-link"> المقالات </a>
                             </li>
@@ -128,18 +124,16 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="contact-us.html"> تواصل معنا </a>
                     </li>
                 </ul>
             </div>
+            <!-- close overlay -->
             <div class="bg-overlay navbar-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             </div>
-
-
+            <!-- profile -->
             <div class="d-flex align-items-center">
-
                 <div class="dropdown header-item dropdown-hover-end">
                     <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -154,33 +148,21 @@
                     <div class="dropdown-menu dropdown-menu-end">
                         <!-- item-->
                         <h6 class="dropdown-header"> ريان سلمون </h6>
-                        <a class="dropdown-item" href="order-history.html"> Order History </a>
-                        <a class="dropdown-item" href="track-order.html"><i
-                                class="bi bi-truck text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle">Track Orders</span></a>
-                        <a class="dropdown-item" href="../backend/index.html"><i
-                                class="bi bi-speedometer2 text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle">Dashboard</span></a>
-                        <a class="dropdown-item" href="ecommerce-faq.html"><i
-                                class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle">Help</span></a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-user"></i> حسابي </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-sharp fa-light fa-arrow-right-to-arc"></i>
+                            تسجيل الدخول </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-address-card"></i> انشاء حساب </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-arrow-right-to-bracket"></i> طلبات
+                            الاستقدام </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-sharp fa-light fa-bell"></i> الاشعارات </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="account.html"><i
-                                class="bi bi-coin text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle">Balance : <b>$8451.36</b></span></a>
-                        <a class="dropdown-item" href="account.html"><span
-                                class="badge bg-success-subtle text-success mt-1 float-end">New</span><i
-                                class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle">Settings</span></a>
-                        <a class="dropdown-item" href="auth-logout-basic.html"><i
-                                class="bi bi-box-arrow-right text-muted fs-16 align-middle me-1"></i> <span
-                                class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-arrow-right-from-bracket"></i> تسجيل
+                            الخروج </a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- subscribe Modal -->
     <!-- <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -215,82 +197,46 @@
         </div>
     </div> -->
     <!-- end modal -->
-
-
     <!--start back-to-top-->
     <button onclick="topFunction()" class="btn btn-info btn-icon" style="bottom: 50px;" id="back-to-top">
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->
-
-
     <section class="position-relative">
-        <div id="ecommerceHero" class="carousel slide" data-bs-ride="carousel">
+        <div id="ecommerceHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="ecommerce-home bg-danger-subtle"
-                        style="background-image: url('assets/images/ecommerce/home/img-1.png');">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="ecommerce-home " style="background-image: url('assets/images/s1.webp');">
                         <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7">
-                                    <div class="text-sm-end">
-                                        <p class="fs-15 fw-semibold text-uppercase"><i
-                                                class="ri-flashlight-fill text-primary align-bottom me-1"></i> In this
-                                            season, find the best</p>
-                                        <h1 class="display-4 fw-bold lh-base text-capitalize mb-3">Exclusive collection
-                                            for everyone</h1>
-                                        <p class="fs-20 mb-4">Biggest offers on this season</p>
-                                        <button class="btn btn-danger btn-hover"><i
-                                                class="ph-shopping-cart align-middle me-1"></i> Shop Now</button>
-                                    </div>
-                                </div>
+                            <div class="mainData">
+                                <h1 class="display-4 fw-bold lh-base text-capitalize mb-3">
+                                    عالم الاستقدام
+                                </h1>
+                                <p class="fs-20 mb-4">
+                                    اكبر تجمع لمكاتب الاستقدام داخل المملكة العربية السعودية
+                                </p>
+                                <button class="btn btn-primary btn-hover">
+                                    <i class="fa-light fa-briefcase me-1"></i>
+                                    طلب استقدام
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="ecommerce-home bg-primary-subtle"
-                        style="background-image: url('assets/images/ecommerce/home/img-2.png');">
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="ecommerce-home " style="background-image: url('assets/images/649840541adc2.jpg');">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div>
-                                        <p class="fs-15 fw-semibold text-uppercase"><i
-                                                class="ri-flashlight-fill text-info align-bottom me-1"></i> Save up to
-                                            <span class="text-danger">50%</span> off
-                                        </p>
-                                        <h1 class="display-4 fw-semibold text-capitalize lh-base">Pro Smart watches for
-                                            smart People</h1>
-                                        <p class="fs-18 mb-4"><b>40% off</b> up to on all selected products</p>
-                                        <button class="btn btn-primary btn-hover"><i
-                                                class="ph-shopping-cart align-middle me-1"></i> Shop Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="ecommerce-home"
-                        style="background-image: url('assets/images/ecommerce/home/img-6.jpg');background-size: cover;">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-6">
-                                    <div class="text-end">
-                                        <p class="fs-15 fw-semibold text-uppercase text-dark">Jewelry Design with Love
-                                        </p>
-                                        <h1 class="display-4 fw-semibold text-capitalize lh-base text-dark">Discover
-                                            world best Jewelry</h1>
-                                        <p class="text-dark lead fs-19 mb-4">Jewelry are like a tribute to being a woman
-                                        </p>
-                                        <div class="hstack gap-2 justify-content-end">
-                                            <button class="btn btn-success btn-hover">Shop Now <i
-                                                    class="ph-arrow-up-right align-middle ms-1"></i></button>
-                                            <button class="btn btn-ghost-secondary btn-hover">Watch Now <i
-                                                    class="ph-play-circle align-middle ms-1 fs-16"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="mainData">
+                                <h1 class="display-4 fw-bold lh-base text-capitalize mb-3">
+                                    نوفر لك
+                                </h1>
+                                <p class="fs-20 mb-4">
+                                    ايدي عاملة مميزة ومدربة بحرفية وتؤدي عملها بأمانة وفقا لمطالب العملاء
+                                </p>
+                                <button class="btn btn-primary btn-hover">
+                                    <i class="fa-light fa-briefcase me-1"></i>
+                                    طلب استقدام
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -304,7 +250,6 @@
             </button>
         </div>
     </section>
-
     <section class="section">
         <div class="container">
             <div class="row gy-4 gy-lg-0">
@@ -355,7 +300,6 @@
             </div>
         </div>
     </section>
-
     <section class="section pt-0">
         <div class="container">
             <div class="row">
@@ -368,7 +312,8 @@
                             <p class="text-uppercase text-white mb-2">Up to 50-70%</p>
                             <h1 class="text-white lh-base fw-medium ff-secondary"> Women's Sportwere Sales</h1>
                             <div class="product-btn mt-4 text-white">
-                                Shop Now <i class="bi bi-arrow-right ms-2"></i>
+                                طلب استقدام
+                                <i class="bi bi-arrow-right ms-2"></i>
                             </div>
                         </div>
                     </a>
@@ -381,7 +326,8 @@
                             <p class="text-uppercase fw-medium text-secondary mb-2">Summer Sales</p>
                             <h1 class="lh-base ff-secondary text-dark">Trendy Fashion Clothes</h1>
                             <div class="product-btn mt-4">
-                                Shop Now <i class="bi bi-arrow-right ms-2"></i>
+                                طلب استقدام
+                                <i class="bi bi-arrow-right ms-2"></i>
                             </div>
                         </div>
                     </a>
@@ -389,7 +335,6 @@
             </div>
         </div>
     </section>
-
     <!-- START PRODUCT -->
     <section class="section pt-0">
         <div class="container">
@@ -403,7 +348,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row mt-5">
                 <div class="col-lg-12">
                     <div class="text-center">
@@ -419,9 +363,7 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="row gallery-wrapper mt-4 pt-2">
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 seller hot arrival"
                             data-category="hot arrival">
                             <div class="card overflow-hidden">
@@ -442,7 +384,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -474,7 +415,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 seller hot" data-category="seller hot">
                             <div class="card overflow-hidden">
                                 <div class="bg-info-subtle rounded-top py-4">
@@ -522,7 +462,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 trendy" data-category="trendy">
                             <div class="card overflow-hidden">
                                 <div class="bg-danger-subtle rounded-top py-4">
@@ -540,7 +479,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -572,7 +510,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 trendy" data-category="trendy">
                             <div class="card overflow-hidden">
                                 <div class="bg-warning-subtle rounded-top py-4">
@@ -590,7 +527,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -622,7 +558,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 seller arrival" data-category="arrival">
                             <div class="card overflow-hidden">
                                 <div class="bg-danger-subtle rounded-top py-4">
@@ -642,7 +577,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -673,7 +607,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 seller hot" data-category="seller hot">
                             <div class="card overflow-hidden">
                                 <div class="bg-success-subtle rounded-top py-4">
@@ -691,7 +624,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -723,7 +655,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project hot arrival"
                             data-category="hot arrival">
                             <div class="card overflow-hidden">
@@ -742,7 +673,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -774,7 +704,6 @@
                             </div>
                         </div>
                         <!-- end col -->
-
                         <div class="element-item col-xxl-3 col-xl-4 col-sm-6 trendy" data-category="trendy">
                             <div class="card overflow-hidden">
                                 <div class="bg-danger-subtle rounded-top py-4">
@@ -794,7 +723,6 @@
                                                         class="mdi mdi-heart align-bottom fs-15"></i></span>
                                             </button>
                                         </div>
-
                                         <div>
                                             <button type="button" class="btn btn-success btn-sm custom-toggle"
                                                 data-bs-toggle="button">
@@ -828,7 +756,6 @@
                         </div>
                         <!-- end col -->
                     </div>
-
                     <div class="mt-4 text-center">
                         <a href="product-list-defualt.html" class="btn btn-soft-primary btn-hover">View All Products <i
                                 class="mdi mdi-arrow-right align-middle ms-1"></i></a>
@@ -838,14 +765,12 @@
         </div>
     </section>
     <!-- END PRODUCT -->
-
     <section class="position-relative bg-danger-subtle bg-cta">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="py-5">
                         <p class="text-uppercase  badge badge-soft-danger fs-13">Get <b>50%</b> off to your order</p>
-
                         <h1 class="lh-base fw-semibold mb-3 text-capitalize">Deal off the week</h1>
                         <p class="fs-16 mt-2">The hands-down winner of denim-friendly sandal styles has to be flat and
                             simple thong sandals. They can be paired with virtually every style of women's jeans
@@ -858,7 +783,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="mt-4 pt-2 d-flex gap-2">
                             <a href="#!" class="btn btn-primary w-md btn-hover">Shopping Now</a>
                             <a href="#!" class="btn btn-danger w-md btn-hover">Subscribe</a>
@@ -873,7 +797,6 @@
             </div>
         </div>
     </section>
-
     <section class="section pb-0">
         <div class="container">
             <div class="row justify-content-center">
@@ -885,14 +808,12 @@
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="swiper latest-slider mt-4" dir="ltr">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-wrapper pt-5">
-
                             <div class="swiper-slide">
                                 <div class="card overflow-hidden">
                                     <div class="bg-dark-subtle rounded-top py-4">
@@ -920,7 +841,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide">
                                 <div class="card overflow-hidden">
                                     <div class="bg-warning-subtle rounded-top py-4">
@@ -948,7 +868,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide">
                                 <div class="card overflow-hidden">
                                     <div class="bg-primary-subtle rounded-top py-4">
@@ -977,7 +896,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide">
                                 <div class="card overflow-hidden">
                                     <div class="bg-danger-subtle rounded-top py-4">
@@ -1006,7 +924,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide">
                                 <div class="card overflow-hidden">
                                     <div class="bg-secondary-subtle rounded-top py-4">
@@ -1035,14 +952,12 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
     </section>
-
     <section class="section">
         <div class="container">
             <div class="row justify-content-center">
@@ -1054,12 +969,10 @@
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="swiper testi-slider">
                         <div class="swiper-wrapper my-5">
-
                             <div class="swiper-slide">
                                 <div class="client-box m-1">
                                     <div class="client-desc p-4 border rounded">
@@ -1079,7 +992,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide mt-5">
                                 <div class="client-box m-1">
                                     <div class="client-desc p-4 border rounded">
@@ -1099,7 +1011,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide">
                                 <div class="client-box m-1">
                                     <div class="client-desc p-4 border rounded">
@@ -1119,7 +1030,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-slide mt-5">
                                 <div class="client-box m-1">
                                     <div class="client-desc p-4 border rounded">
@@ -1143,7 +1053,6 @@
                     </div>
                 </div>
             </div>
-
             <div
                 class="row row-cols-lg-5 row-cols-md-3 row-cols-1 text-center justify-content-center align-items-center g-3 mt-5 pt-lg-5">
                 <div class="col">
@@ -1189,159 +1098,146 @@
             </div>
         </div>
     </section>
-
     <!-- START BLOG -->
-    <section class="section bg-light bg-opacity-50">
+    <section class="section blog bg-light bg-opacity-50">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="text-center">
-                        <h3 class="mb-3">Shop insights & feeds</h3>
-                        <p class="text-muted fs-15">Shopping Insights gives marketers a 360-degree view of a product's
-                            popularity. Harnessing search volume data for more than 7,000 popular products (and
-                            counting)</p>
+                        <h3 class="mb-3"> الاخبار والمقالات </h3>
+                        <p class="text-muted fs-15">
+                            تابع اخر الاخبار والمقالات في مجال الاستقدام
+                        </p>
                     </div>
                 </div>
             </div>
-
             <div class="row mt-5">
                 <div class="col-lg-4">
                     <div class="card overflow-hidden">
-                        <img src="assets/images/small/img-3.jpg" class="img-fluid" alt="">
+                        <img src="assets/images/s1.webp" class="img-fluid" alt="">
                         <div class="card-body">
-                            <div class="entry-meta">
-                                <a href="#!" class="text-muted">12 <i class="mdi mdi-like"></i> Like</a>
-                                <span class="text-muted mx-1">|</span>
-                                <a href="#!" class="text-muted">10 Comments</a>
-                            </div>
+
                             <div class="blog-date bg-body-secondary rounded">
                                 <h4 class="mb-0">15</h4>
-                                <p class="text-muted mt-1">April</p>
+                                <p class="text-muted mt-1"> ابريل </p>
                             </div>
                             <div class="mt-3">
                                 <a href="#!">
-                                    <h5 class="fs-17 lh-base">Society Pass Turns to Stripe to Simplify Checkout</h5>
+                                    <h5 class="fs-17 lh-base"> تم توفير خدمة جديدة </h5>
                                 </a>
-                                <p class="text-muted fs-15 mt-2">Southeast Asian eCommerce ecosystem Society Pass (SoPa)
-                                    says it has integrated Stripe’s financial infrastructure solutions onto its
-                                    platform.</p>
-                                <a href="#!" class="link-effect link-info">Continue Reading <i
-                                        class="bi bi-arrow-right ms-2"></i></a>
+                                <p class="text-muted fs-15 mt-2">
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                                    التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم
+                                    استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً
+
+                                </p>
+                                <a href="#!" class="link-effect link-info"> قراءة المزيد
+                                    <i class="bi bi-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4">
                     <div class="card overflow-hidden">
-                        <img src="assets/images/small/img-8.jpg" class="img-fluid" alt="">
+                        <img src="assets/images/s2.webp" class="img-fluid" alt="">
                         <div class="card-body">
-                            <div class="entry-meta">
-                                <a href="#!" class="text-muted">24 <i class="mdi mdi-like"></i> Like</a>
-                                <span class="text-muted mx-1">|</span>
-                                <a href="#!" class="text-muted">32 Comments</a>
-                            </div>
+
                             <div class="blog-date bg-body-secondary rounded">
                                 <h4 class="mb-0">23</h4>
-                                <p class="text-muted mt-1">April</p>
+                                <p class="text-muted mt-1"> ابريل </p>
                             </div>
                             <div class="mt-3">
                                 <a href="#!">
-                                    <h5 class="fs-17 lh-base">Integrating Crypto Payment to Ecommerce</h5>
+                                    <h5 class="fs-17 lh-base"> تم توفير خدمة جديدة </h5>
                                 </a>
-                                <p class="text-muted fs-15 mt-2"> To start accepting Bitcoin on your eCommerce site,
-                                    simply integrate a BTC payment processor into your store. Many major eCommerce
-                                    providers. </p>
-                                <a href="#!" class="link-effect link-info">Continue Reading <i
-                                        class="bi bi-arrow-right ms-2"></i></a>
+                                <p class="text-muted fs-15 mt-2">
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                                    التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم
+                                    استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً
+                                </p>
+                                <a href="#!" class="link-effect link-info"> قراءة المزيد
+                                    <i class="bi bi-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4">
                     <div class="card overflow-hidden">
-                        <img src="assets/images/small/img-6.jpg" class="img-fluid" alt="">
+                        <img src="assets/images/s3.webp" class="img-fluid" alt="">
                         <div class="card-body">
-                            <div class="entry-meta">
-                                <a href="#!" class="text-muted">48 <i class="mdi mdi-like"></i> Like</a>
-                                <span class="text-muted mx-1">|</span>
-                                <a href="#!" class="text-muted">15 Comments</a>
-                            </div>
+
                             <div class="blog-date bg-body-secondary rounded">
                                 <h4 class="mb-0">31</h4>
-                                <p class="text-muted mt-1">April</p>
+                                <p class="text-muted mt-1"> ابريل </p>
                             </div>
                             <div class="mt-3">
                                 <a href="#!">
-                                    <h5 class="fs-17 lh-base">Etsy Is a High-Flier Among E-Commerce Stocks</h5>
+                                    <h5 class="fs-17 lh-base"> تم توفير خدمة جديدة </h5>
                                 </a>
-                                <p class="text-muted fs-15 mt-2">E-commerce stocks soared to record-high valuations
-                                    during the pandemic. However, now that economies have reopened during the pandemic.
+                                <p class="text-muted fs-15 mt-2">
+                                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن
+                                    التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم
+                                    استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً
                                 </p>
-                                <a href="#!" class="link-effect link-info">Continue Reading <i
-                                        class="bi bi-arrow-right ms-2"></i></a>
+                                <a href="#!" class="link-effect link-info"> قراءة المزيد
+                                    <i class="bi bi-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="mt-4 text-center">
-                <a href="#!" class="btn btn-soft-primary btn-hover">View More Articles <i
-                        class="bi bi-arrow-right ms-2"></i></a>
+                <a href="#!" class="btn btn-soft-primary btn-hover"> عرض كل المقالات
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
             </div>
         </div>
     </section>
     <!-- END BLOG -->
-
     <!-- START INSTAGRAM -->
     <section class="section pb-0">
         <div class="container">
             <div class="row justify-content-center g-0">
                 <div class="col-lg-7">
                     <div class="text-center">
-                        <h3 class="mb-3">Follow Us In Instagram</h3>
-                        <p class="text-muted fs-15">The most common approach that peoples use to say follow me on
-                            Instagram is by sending a direct message.</p>
+                        <h3 class="mb-3"> تابعنا على الانستجرام </h3>
+                        <p class="text-muted fs-15">
+                            شاهد احدث منشوراتنا أول بأول
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="position-relative">
             <div class="row g-0 mt-5">
                 <div class="col">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-1.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/s1.webp" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-2.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/s2.webp" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
                 </div>
-
                 <div class="col d-none d-md-block">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-3.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/s3.webp" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
                 </div>
-
                 <div class="col d-none d-md-block">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-4.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/649840541adc2.jpg" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
@@ -1349,7 +1245,7 @@
                 <div class="col d-none d-lg-block">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-5.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/s1.webp" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
@@ -1357,33 +1253,27 @@
                 <div class="col d-none d-lg-block">
                     <div class="insta-img">
                         <a href="#!" class="stretched-link">
-                            <img src="assets/images/ecommerce/instagram/img-6.jpg" class="img-fluid" alt="">
+                            <img src="assets/images/s2.webp" class="img-fluid" alt="">
                             <i class="ri-instagram-line"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="insta-lable text-center">
-                <a href="#!" class="btn btn-primary btn-hover">
-                    <i class="ph-instagram-logo align-middle me-1"></i> Follow In Instagram
-                </a>
-            </div>
         </div>
     </section>
     <!-- END INSTAGRAM -->
-
     <section class="section footer-landing pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="footer-info">
-                        <img src="assets/images/logoV-light.svg" alt="" height="28" class="logo-light">
-                        <img src="assets/images/logoV.svg" alt="" height="28" class="logo-dark">
-                        <p class="footer-desc mt-4 mb-2 me-3">Recruitment world provides best fashion experience for
-                            both men and
-                            women at best pricing. We follow New fashion approach to give best premium feel.</p>
-
+                        <img src="assets/images/logoV-light.svg" alt="" class="logo logo-light">
+                        <img src="assets/images/logoV.svg" alt="" class="logo logo-dark">
+                        <p class="footer-desc mt-4 mb-2 me-3">
+                            نهتم في عالم الاستقدام بخدمتكم عن طريق قنوات تواصل متعددة ونضمن لكم خدمة متكاملة وتجربة عميل
+                            مميزة
+                        </p>
                         <div class="footer-social mt-4">
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
@@ -1393,10 +1283,10 @@
                                     <a href="#!" class="text-reset"><i class="mdi mdi-twitter"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#!" class="text-reset"><i class="mdi mdi-google"></i></a>
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-whatsapp"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#!" class="text-reset"><i class="mdi mdi-pinterest"></i></a>
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-snapchat"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -1404,108 +1294,64 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="row pl-0 pl-lg-3">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="mt-lg-0 mt-4">
-                                <h5 class="footer-title">Categories</h5>
+                                <h5 class="footer-title"> روابط سريعة </h5>
                                 <ul class="list-unstyled footer-link mt-3">
-                                    <li><a href="#!">Men</a></li>
-                                    <li><a href="#!">Jewellery</a></li>
-                                    <li><a href="#!">Accesories</a></li>
-                                    <li><a href="#!">Clothing</a></li>
-                                    <li><a href="#!">Beauty Items</a></li>
+                                    <li><a href="#!"> مكاتب الاستقدام </a></li>
+                                    <li><a href="#!"> طلب استقدام </a></li>
+                                    <li><a href="#!"> الأسئلة الشائعة </a></li>
+                                    <li><a href="#!"> الشروط والاحكام </a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="mt-lg-0 mt-4">
-                                <h5 class="footer-title">Information</h5>
+                                <h5 class="footer-title">الدعم</h5>
                                 <ul class="list-unstyled footer-link mt-3">
-                                    <li><a href="#!">Custom Service</a></li>
-                                    <li><a href="#!">FAQs</a></li>
-                                    <li><a href="#!">Ordering</a></li>
-                                    <li><a href="#!">Tracking</a></li>
-                                    <li><a href="#!">Contacts</a></li>
+                                    <li><a href="#!"> مركز المساعدة </a></li>
+                                    <li><a href="#!"> المقالات </a></li>
+                                    <li><a href="#!"> انضم الينا </a></li>
                                 </ul>
                             </div>
                         </div>
-
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="mt-lg-0 mt-4">
-                                <h5 class="footer-title">My Account</h5>
+                                <h5 class="footer-title"> حسابي </h5>
                                 <ul class="list-unstyled footer-link mt-3">
-                                    <li><a href="#!">Sign In</a></li>
-                                    <li><a href="#!">View Cart</a></li>
-                                    <li><a href="#!">My Wishlist</a></li>
-                                    <li><a href="#!">Track My Order</a></li>
-                                    <li><a href="#!">Help</a></li>
+                                    <li><a href="#!"> تسجيل الدخول </a></li>
+                                    <li><a href="#!"> انشاء حساب </a></li>
+                                    <li><a href="#!"> طلبات الاستقدام </a></li>
+                                    <li><a href="#!"> حسابي </a></li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="mt-lg-0 mt-4">
-                                <h5 class="footer-title">Customer Service</h5>
-                                <ul class="list-unstyled footer-link mt-3">
-                                    <li><a href="#!">Payment Methods</a></li>
-                                    <li><a href="#!">Money-back!</a></li>
-                                    <li><a href="#!">Returns</a></li>
-                                    <li><a href="#!">Shipping</a></li>
-                                    <li><a href="#!">Terms and conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+            <div class="copyRight">
+                <script>document.write(new Date().getFullYear())</script> © عالم الاستقدام . تصميم وتطوير
+                <a href="https://nami-tec.com/" target="_blank">
+                    Nami
+                    <img src="assets/images/namiFav.svg" alt="">
+                </a>
 
-            <div class="row footer-border-alt mt-4 align-items-center fs-15">
-                <div class="col-sm-6">
-                    <script>document.write(new Date().getFullYear())</script> © Recruitment world. Design &amp; Develop
-                    by <a href="#!" class="text-reset text-decoration-underline">Nami</a>
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-sm-end d-none d-sm-block">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a href="#!"><img src="assets/images/ecommerce/payment/visa.png" alt="" height="30"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><img src="assets/images/ecommerce/payment/discover.png" alt=""
-                                        height="30"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><img src="assets/images/ecommerce/payment/american-express.png" alt=""
-                                        height="30"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><img src="assets/images/ecommerce/payment/paypal.png" alt=""
-                                        height="30"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/js/plugins.js"></script>
-
     <!-- isotope-layout -->
     <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
-
     <!--Swiper slider js-->
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-
     <!-- Countdown js -->
     <script src="assets/js/pages/coming-soon.init.js"></script>
-
     <script src="assets/js/frontend/landing-index.init.js"></script>
-
     <script src="assets/js/frontend/menu.init.js"></script>
-
 </body>
 
 </html>

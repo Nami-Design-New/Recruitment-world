@@ -1,6 +1,6 @@
 @charset "UTF-8";
-:root{
-  --mainColor:#4972B7;
+:root {
+  --mainColor: #4972b7;
 }
 @import url(https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap);
 @font-face {
@@ -12908,11 +12908,14 @@ span.flatpickr-weekday {
 * {
   direction: rtl;
 }
-#ecommerceHero .carousel-control-next i, #ecommerceHero .carousel-control-prev i{
-  transform:  rotate(135deg);
+#ecommerceHero .carousel-control-next i,
+#ecommerceHero .carousel-control-prev i {
+  transform: rotate(135deg);
 }
-
-.bi-arrow-right::before{
-  transform: scaleX(-1) ;
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.mdi-arrow-right::before,
+.bi-arrow-right::before {
+  transform: scaleX(-1);
 }
 /*# sourceMappingURL=app.min.css.map */
