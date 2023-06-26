@@ -3020,12 +3020,7 @@
 .list-group-flush.border-inset .list-group-item {
   border-style: inset !important;
 }
-.ff-base {
-  font-family: var(--tb-font-sans-serif);
-}
-.ff-secondary {
-  font-family: "Lobster Two", cursive;
-}
+
 .social-list-item {
   height: 2rem;
   width: 2rem;
