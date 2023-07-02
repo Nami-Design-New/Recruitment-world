@@ -76,6 +76,11 @@ h6 {
 #ecommerceHero .mainData {
   width: min(100% - 24px, 600px);
 }
+@media screen and (max-width: 768px) {
+  #ecommerceHero .mainData {
+    text-align: center;
+  }
+}
 #ecommerceHero .ecommerce-home {
   position: relative;
 }
