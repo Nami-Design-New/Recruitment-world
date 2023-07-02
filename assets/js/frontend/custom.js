@@ -100,7 +100,7 @@ var swiper = new Swiper(".testi-slider", {
 });
 // latest product slider
 var swiper = new Swiper(".latest-slider", {
-  spaceBetween: 10,
+  spaceBetween: 16,
   loop: 'true',
   slidesPerView: 1,
   pagination: {

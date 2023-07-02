@@ -151,7 +151,8 @@ h6 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    aspect-ratio: 3/2;
+    aspect-ratio: 2/1;
+    border-radius: 16px;
     img {
       position: absolute;
       left: 0;
@@ -160,6 +161,7 @@ h6 {
       height: 100%;
       object-fit: cover;
       z-index: -2;
+      border-radius: 16px;
     }
     .product-content {
       &::before {
@@ -170,9 +172,10 @@ h6 {
         width: 100%;
         height: 100%;
         display: block;
-        background-color: #000;
-        opacity: 0.4;
+        background-color: #00000062;
         z-index: -1;
+        border-radius: 16px;
+        backdrop-filter: blur(1px);
       }
     }
   }
@@ -197,7 +200,7 @@ h6 {
   margin-top: 75px;
   color: #000;
   text-align: center;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   img {
     height: 100px;
     width: 100px;
@@ -234,28 +237,85 @@ h6 {
       }
     }
   }
-  .subInfo{
+  .subInfo {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 16px;
-    .sub{
+    .sub {
       flex: 0 0 45%;
       display: flex;
       flex-direction: column;
       gap: 4px;
-      p{
+      p {
         color: #777;
       }
     }
   }
-  .more{
-    background-color: #4972B720;
+  .more {
+    background-color: #4972b720;
     color: var(--mainColor);
+    border-radius: 12px;
   }
 
-  &:hover{
-    background-color: #4972B740;
+  &:hover {
+    background-color: #4972b740;
     transform: translateY(-5px);
+  }
+}
+
+.ecommerce-navbar .navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+}
+
+.latest-slider {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    margin: unset;
+  }
+}
+
+.blogIndex {
+  position: relative;
+  overflow: hidden;
+}
+.gear {
+  animation: rotate 110s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+  display: block;
+  vertical-align: middle;
+  width: min(100% - 24px, 600px);
+  aspect-ratio: 1/1;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: calc(50% - 300px);
+
+  path {
+    fill: #4972b730;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.customerReviews {
+  background-image: linear-gradient(#ffffff80, #ffffffda),
+    url(../images/bg2.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  .client-desc {
+    background-color: #fff;
   }
 }
