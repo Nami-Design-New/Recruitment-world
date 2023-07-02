@@ -191,6 +191,9 @@ h6 {
           backdrop-filter: blur(1px);
 }
 
+.bestCompanies {
+  background-image: linear-gradient(rgba(73, 114, 183, 0.1254901961), rgba(73, 114, 183, 0.1254901961)), url(https://weblearnbd.net/tphtml/insurez/assets/img/features/features.jpg);
+}
 .bestCompanies .gallery-product img {
   width: 100%;
   aspect-ratio: 1/1;
