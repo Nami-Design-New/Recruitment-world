@@ -185,4 +185,84 @@ h6 {
   background-color: #000;
   opacity: 0.4;
   z-index: -1;
+}
+
+.bestCompanies .gallery-product img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: rgba(73, 114, 183, 0.062745098);
+  margin-top: 75px;
+  color: #000;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.cv img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+  margin: -75px auto 16px;
+  border: 4px solid #fff;
+}
+.cv h5,
+.cv p,
+.cv h6,
+.cv h3,
+.cv h2,
+.cv h1,
+.cv h4 {
+  margin: 0;
+}
+.cv .mainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.cv .mainInfo .age {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.cv .mainInfo .age span {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+.cv .subInfo {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.cv .subInfo .sub {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cv .subInfo .sub p {
+  color: #777;
+}
+.cv .more {
+  background-color: rgba(73, 114, 183, 0.1254901961);
+  color: var(--mainColor);
+}
+.cv:hover {
+  background-color: rgba(73, 114, 183, 0.2509803922);
+  transform: translateY(-5px);
 }/*# sourceMappingURL=custom.min.css.map */

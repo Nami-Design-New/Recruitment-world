@@ -25,13 +25,11 @@ h6 {
   outline: none;
   scroll-behavior: smooth;
 }
-
 @media (max-width: 991.98px) {
   .ecommerce-navbar .navbar-collapse {
     padding: 48px 8px;
   }
 }
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 6px;
@@ -50,14 +48,12 @@ h6 {
 :target {
   scroll-margin-top: 50px;
 }
-
 .navbar .navbar-brand {
   img {
     height: 35px;
     object-fit: contain;
   }
 }
-
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -71,12 +67,10 @@ h6 {
     align-items: center;
   }
 }
-
 #ecommerceHero {
   .mainData {
     width: min(100% - 24px, 600px);
   }
-
   .ecommerce-home {
     position: relative;
     &::after {
@@ -105,7 +99,6 @@ h6 {
   background-color: var(--mainColor);
   border-color: var(--mainColor);
 }
-
 .copyRight {
   display: flex;
   justify-content: center;
@@ -124,7 +117,6 @@ h6 {
     gap: 4px;
   }
 }
-
 .insta-img {
   width: 100%;
   a {
@@ -143,7 +135,6 @@ h6 {
   height: 40px;
   object-fit: contain;
 }
-
 .blog {
   .card {
     height: 100%;
@@ -153,7 +144,6 @@ h6 {
     }
   }
 }
-
 .recruitmentRequest {
   .productBanner {
     position: relative;
@@ -162,16 +152,16 @@ h6 {
     justify-content: center;
     flex-direction: column;
     aspect-ratio: 3/2;
-   img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-   }
-    .product-content{
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .product-content {
       &::before {
         content: "";
         position: absolute;
@@ -181,10 +171,91 @@ h6 {
         height: 100%;
         display: block;
         background-color: #000;
-        opacity: .4;
+        opacity: 0.4;
         z-index: -1;
       }
     }
-   
+  }
+}
+.bestCompanies {
+  .gallery-product {
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      padding: 20px;
+    }
+  }
+}
+.cv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #4972b710;
+  margin-top: 75px;
+  color: #000;
+  text-align: center;
+  transition: .3s ease-in-out;
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 16px;
+    margin: -75px auto 16px;
+    border: 4px solid #fff;
+  }
+  h5,
+  p,
+  h6,
+  h3,
+  h2,
+  h1,
+  h4 {
+    margin: 0;
+  }
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 16px;
+
+    .age {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      span {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--mainColor);
+      }
+    }
+  }
+  .subInfo{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    .sub{
+      flex: 0 0 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      p{
+        color: #777;
+      }
+    }
+  }
+  .more{
+    background-color: #4972B720;
+    color: var(--mainColor);
+  }
+
+  &:hover{
+    background-color: #4972B740;
+    transform: translateY(-5px);
   }
 }

@@ -12332,10 +12332,10 @@ span.flatpickr-weekday {
   height: 60px;
   background-color: var(--tb-body-bg);
   border: 1px solid var(--tb-border-color);
-  -webkit-transform: rotate(67deg);
-  transform: rotate(67deg);
-  border-color: transparent var(--tb-border-color) var(--tb-border-color)
-    transparent;
+  -webkit-transform: rotate(-67deg);
+  transform: rotate(-67deg);
+  border-color:   transparent transparent var(--tb-border-color) var(--tb-border-color)
+    ;
   bottom: -30px;
   right: 80px;
   margin-top: 10px;
