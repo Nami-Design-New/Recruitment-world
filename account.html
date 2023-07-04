@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Account | Recruitment world Recruitment world</title>
+    <title>Recruitment world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Recruitment world" name="description">
     <meta content="Nami" name="author">
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/fav.svg">
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <!--font Awesome -->
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap Css -->
     <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- App Css-->
     <!-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/css/appAR.css" rel="stylesheet" type="text/css">
@@ -201,7 +205,7 @@
     <!-- start profile -->
     <section class="position-relative">
         <div class="profile-basic position-relative"
-            style="background-image: url('assets/images/profile-bg.jpg');background-size: cover;background-position: center; height: 300px;">
+            style="background-image: url('assets/images/s2.webp');background-size: cover;background-position: center; height: 300px;">
             <div class="bg-overlay bg-primary" style="--bs-bg-opacity: 0.99;"></div>
         </div>
         <div class="container">
@@ -212,15 +216,17 @@
                             <img src="assets/images/users/avatar-1.jpg" alt=""
                                 class="avatar-xl rounded p-1 bg-light mt-n3">
                             <div>
-                                <h5 class="fs-18">Raquel Murillo</h5>
+                                <h5 class="fs-18"> احمد السيد </h5>
                                 <div class="text-muted">
-                                    <i class="bi bi-geo-alt"></i> Phoenix, USA
+                                    <i class="bi bi-geo-alt"></i> الرياض / المملكة العربية السعودية
                                 </div>
                             </div>
                             <div class="ms-md-auto">
                                 <!-- <p class="mb-0">Recruitment world Member Since Jan 2020</p> -->
-                                <a href="product-list.html" class="btn btn-success btn-hover"><i
-                                        class="bi bi-cart4 me-1 align-middle"></i> Shopping Now</a>
+                                <a href="product-list.html" class="btn btn-success btn-hover">
+                                    <i class="fa-light fa-briefcase me-1"></i>
+                                    طلب استقدام
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -240,26 +246,26 @@
                                 <li class="nav-item " role="presentation">
                                     <a class="nav-link fs-15 active" data-bs-toggle="tab" href="#custom-v-pills-profile"
                                         role="tab" aria-selected="true"><i
-                                            class="bi bi-person-circle align-middle me-1"></i> Account Info</a>
+                                            class="bi bi-person-circle align-middle me-1"></i> المعلومات الشخصية </a>
                                 </li>
                                 <li class="nav-item " role="presentation">
                                     <a class="nav-link fs-15" data-bs-toggle="tab" href="#custom-v-pills-list"
                                         role="tab" aria-selected="false" tabindex="-1"><i
-                                            class="bi bi-bookmark-check align-middle me-1"></i> Wish list</a>
+                                            class="bi bi-bookmark-check align-middle me-1"></i> طلبات الاستقدام  </a>
                                 </li>
                                 <li class="nav-item " role="presentation">
                                     <a class="nav-link fs-15" data-bs-toggle="tab" href="#custom-v-pills-order"
                                         role="tab" aria-selected="false" tabindex="-1"><i
-                                            class="bi bi-bag align-middle me-1"></i> Order</a>
+                                            class="bi bi-bag align-middle me-1"></i>  الطلبات السابقة </a>
                                 </li>
                                 <li class="nav-item " role="presentation">
                                     <a class="nav-link fs-15" data-bs-toggle="tab" href="#custom-v-pills-setting"
                                         role="tab" aria-selected="false" tabindex="-1"><i
-                                            class="bi bi-gear align-middle me-1"></i> Settings</a>
+                                            class="bi bi-gear align-middle me-1"></i>  الاعدادات </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fs-15" href="auth-logout-basic.html"><i
-                                            class="bi bi-box-arrow-right align-middle me-1"></i> Logout</a>
+                                    <a class="nav-link fs-15" href="auth-logout.html"><i
+                                            class="bi bi-box-arrow-right align-middle me-1"></i> تسجيل الخروج </a>
                                 </li>
                             </ul>
                         </div>
@@ -852,7 +858,7 @@
                                                         </div>
                                                         <div class="col-lg-12">
                                                             <div class="mb-3">
-                                                                <a href="auth-pass-reset-basic.html"
+                                                                <a href="auth-pass-reset.html"
                                                                     class="link-primary text-decoration-underline">Forgot
                                                                     Password ?</a>
                                                             </div>
@@ -995,86 +1001,7 @@
         </div>
     </section>
     <!-- end tab-->
-    <!-- start subscribe-->
-    <section class="section bg-light bg-opacity-25"
-        style="background-image: url('assets/images/ecommerce/bg-effect.png');background-position: center; background-size: cover;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6">
-                    <div>
-                        <p class="fs-15 text-uppercase fw-medium"><span class="fw-semibold text-danger">25% Up to</span>
-                            off all Products</p>
-                        <h1 class="lh-base text-capitalize mb-3">Stay home & get your daily needs from our shop</h1>
-                        <p class="fs-15 mb-4 pb-2">Start You'r Daily Shopping with <a href="#!"
-                                class="link-info fw-medium">Recruitment world</a></p>
-                        <form action="#!">
-                            <div class="position-relative ecommerce-subscript">
-                                <input type="email" class="form-control rounded-pill" placeholder="Enter your email">
-                                <button type="submit" class="btn btn-info btn-hover rounded-pill">Subscript Now</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mt-5 mt-lg-0">
-                        <img src="assets/images/ecommerce/subscribe.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end conatiner-->
-    </section>
-    <!-- end subscribe-->
-    <section class="position-relative py-5">
-        <div class="container">
-            <div class="row gy-4 gy-lg-0">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="flex-shrink-0">
-                            <img src="assets/images/ecommerce/fast-delivery.png" alt="" class="avatar-sm">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="fs-15">Fast &amp; Secure Delivery</h5>
-                            <p class="text-muted mb-0">Tell about your service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="flex-shrink-0">
-                            <img src="assets/images/ecommerce/returns.png" alt="" class="avatar-sm">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="fs-15">2 Days Return Policy</h5>
-                            <p class="text-muted mb-0">No question ask.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="flex-shrink-0">
-                            <img src="assets/images/ecommerce/guarantee-certificate.png" alt="" class="avatar-sm">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="fs-15">Money Back Guarantee</h5>
-                            <p class="text-muted mb-0">Within 5 business days</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="flex-shrink-0">
-                            <img src="assets/images/ecommerce/24-hours-support.png" alt="" class="avatar-sm">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="fs-15">24 X 7 Service</h5>
-                            <p class="text-muted mb-0">Online service for customer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Modal -->
     <div class="modal fade" id="invoiceModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-custom-size">
@@ -1380,8 +1307,13 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/js/plugins.js"></script>
-    <!-- landing-index js -->
+    <!-- isotope-layout -->
+    <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- Countdown js -->
     <script src="assets/js/frontend/menu.init.js"></script>
+    <script src="assets/js/frontend/custom.js"></script>
 </body>
 
 </html>

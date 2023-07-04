@@ -324,3 +324,24 @@ h6 {
     background-color: #fff;
   }
 }
+.auth-page-wrapper {
+  padding: 0px 0 80px;
+  .authLogo{
+    height: 140px;
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+.form-label{
+  font-weight: bold;
+}
+.form-control{
+  min-height: 54px;
+  &::placeholder{
+    color: #777;
+  }
+}
+.password-addon {
+  height: 100%;
+}

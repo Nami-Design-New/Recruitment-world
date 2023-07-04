@@ -331,4 +331,33 @@ h6 {
 }
 .customerReviews .client-desc {
   background-color: #fff;
+}
+
+.auth-page-wrapper {
+  padding: 0px 0 80px;
+}
+.auth-page-wrapper .authLogo {
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  min-height: 54px;
+}
+.form-control::-moz-placeholder {
+  color: #777;
+}
+.form-control::placeholder {
+  color: #777;
+}
+
+.password-addon {
+  height: 100%;
 }/*# sourceMappingURL=custom.min.css.map */
