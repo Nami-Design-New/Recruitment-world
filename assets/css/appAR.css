@@ -5392,6 +5392,7 @@ button {
   font-family: "Material Design Icons";
   font-size: 15px;
   line-height: 20px;
+  transform: scaleX(-1);
 }
 .breadcrumb-light {
   --tb-breadcrumb-divider-color: rgba(255, 255, 255, 0.75);
@@ -12907,6 +12908,8 @@ span.flatpickr-weekday {
 #ecommerceHero .carousel-control-prev i {
   transform: rotate(135deg);
 }
+.bi-arrow-right-short::before,
+.ri-arrow-right-line:before,
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after,
 .mdi-arrow-right::before,

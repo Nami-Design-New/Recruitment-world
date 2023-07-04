@@ -360,4 +360,14 @@ h6 {
 
 .password-addon {
   height: 100%;
+}
+
+.breadcrumb-item.active {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0;
 }/*# sourceMappingURL=custom.min.css.map */
