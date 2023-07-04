@@ -370,4 +370,15 @@ h6 {
 
 .breadcrumb-item + .breadcrumb-item::before {
   padding: 0;
+}
+
+.ribbon-box .ribbon {
+  z-index: 999;
+}
+
+.productSwiper2 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=custom.min.css.map */
