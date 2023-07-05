@@ -396,4 +396,18 @@ h6 {
 }
 .ribbon-box .trending-ribbon .trending-ribbon-text {
   opacity: 1;
+}
+
+.aboutImages img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+}
+
+.ecommerce-about-service img {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=custom.min.css.map */
