@@ -306,7 +306,6 @@ h6 {
   transform-origin: center;
   transform-box: fill-box;
   display: block;
-  vertical-align: middle;
   width: min(100% - 24px, 600px);
   aspect-ratio: 1/1;
   position: absolute;
