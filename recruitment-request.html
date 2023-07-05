@@ -1,0 +1,785 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>عالم الاستقدام</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="عالم الاستقدام" name="description">
+    <meta content="Nami" name="author">
+    <link rel="shortcut icon" href="assets/images/fav.svg">
+    <!-- Bootstrap Css -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <!--font Awesome -->
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- fancybox Css -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <!-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/appAR.css" rel="stylesheet" type="text/css">
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top-tagbar">
+        <div class="w-100">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 col-9">
+                    <div class="fs-14 fw-medium">
+                        <i class="bi bi-geo-alt align-middle me-2"></i> الرياض - المملكة العربية السعودية
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 d-none d-xxl-block">
+                    <div class="d-flex align-items-center justify-content-center gap-3 fs-14 fw-medium">
+                        <div>
+                            <i class="bi bi-envelope align-middle me-2"></i> email@email.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-3">
+                    <div class="d-flex align-items-center justify-content-end gap-3 fs-14">
+                        <div class="text-reset fw-normal d-none d-lg-block">
+                            <i class="bi bi-telephone-outbound align-middle me-2"></i> +(966) 01234 5678
+                        </div>
+                        <hr class="vr d-none d-lg-block">
+                        <div class="dropdown topbar-head-dropdown topbar-tag-dropdown justify-content-end">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar text-reset rounded-circle fs-14 fw-medium"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="assets/images/flags/sa.svg" alt="Header Language"
+                                    height="16" class="rounded-circle me-2"> <span id="lang-name">عربى</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2"
+                                    data-lang="en" title="English">
+                                    <img src="assets/images/flags/us.svg" alt="user-image" class="me-2 rounded-circle"
+                                        height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sa"
+                                    title="Arabic">
+                                    <img src="assets/images/flags/sa.svg" alt="user-image" class="me-2 rounded-circle"
+                                        height="18">
+                                    <span class="align-middle">عربى</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg ecommerce-navbar" id="navbar">
+        <div class="container">
+            <!-- collapse Btn -->
+            <button class="btn btn-soft-primary btn-icon d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-20"></i>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand " href="index.html">
+                <div class="logo-dark">
+                    <img src="assets/images/logoV.svg" alt="">
+                </div>
+                <div class="logo-light">
+                    <img src="assets/images/logoV-light.svg" alt="">
+                </div>
+            </a>
+            <!-- main links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0" id="navigation-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> الرئيسية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!"> مكاتب الاستقدام </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!"> طلب استقدام </a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الدعم
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-center dropdown-menu-list submenu">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link"> المقالات </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link"> مركز المساعدة </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link"> انضم الينا </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"> تواصل معنا </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- close overlay -->
+            <div class="bg-overlay navbar-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            </div>
+            <!-- profile -->
+            <div class="d-flex align-items-center">
+                <div class="dropdown header-item dropdown-hover-end">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
+                            alt="Header Avatar">
+                    </button>
+                    <!-- <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ph-user-circle fs-22"></i>
+                    </button> -->
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header"> ريان سلمون </h6>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-user"></i> حسابي </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-sharp fa-light fa-arrow-right-to-arc"></i>
+                            تسجيل الدخول </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-address-card"></i> انشاء حساب </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-arrow-right-to-bracket"></i> طلبات
+                            الاستقدام </a>
+                        <a class="dropdown-item" href="#!"> <i class="fa-sharp fa-light fa-bell"></i> الاشعارات </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!"> <i class="fa-light fa-arrow-right-from-bracket"></i> تسجيل
+                            الخروج </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- subscribe Modal -->
+    <!-- <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-body p-0 bg-info-subtle rounded">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="p-4 h-100">
+                                <span class="badge badge-soft-info fs-13">GET 10% SALE OFF</span>
+                                <h2 class="display-6 mt-2 mb-3">Subscribe & Get <b>50% Special</b> Discount On Email
+                                </h2>
+                                <p class="mb-4 pb-lg-2 fs-16">Join our newsletter to receive the latest updates and
+                                    promotion</p>
+                                <form action="#!">
+                                    <div class="position-relative ecommerce-subscript">
+                                        <input type="email" class="form-control rounded-pill border-0"
+                                            placeholder="Enter your email">
+                                        <button type="submit"
+                                            class="btn btn-info btn-hover rounded-pill">Subscript</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-4 pb-0">
+                                <img src="assets/images/subscribe.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end modal -->
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-info btn-icon" style="bottom: 50px;" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+    <section class="ecommerce-about"
+        style="background-image: url('assets/images/s3.webp'); background-size: cover;background-position: center;">
+        <div class="bg-overlay bg-primary" style="opacity: 0.85;"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h1 class="text-white mb-0"> طلب استقدام </h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-light justify-content-center mt-4">
+                                <li class="breadcrumb-item"><a href="#"> الرئيسية </a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> طلب استقدام </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="ecommerce-product gap-4">
+                <div class="sidebar small-sidebar flex-shrink-0">
+                    <div class="card overflow-hidden">
+                        <div class="card-header">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1">
+                                    <h5 class="fs-16 mb-0">الفلاتر</h5>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a href="#" class="text-decoration-underline" id="clearall">
+                                        مسح الكل
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush filter-accordion">
+                            <div class="card-body border-bottom">
+                                <div>
+                                    <p class="text-muted text-uppercase fs-12 fw-medium mb-2"> الاقسام </p>
+                                    <ul class="list-unstyled mb-0 filter-list">
+                                        <li>
+                                            <a href="#" class="d-flex py-2 align-items-center">
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0 listname"> سائق خاص </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex py-2 align-items-center">
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0 listname"> عاملة منزلية </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex py-2 align-items-center">
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0 listname"> عامل منزلي </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex py-2 align-items-center">
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0 listname"> طباخ منزلية </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="d-flex py-2 align-items-center">
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0 listname"> طباخ منزلي </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent shadow-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseCompany"
+                                        aria-expanded="true" aria-controls="flush-collapseCompany">
+                                        <span class="text-muted text-uppercase fs-12 fw-medium"> مكاتب الاستقدام </span>
+                                        <span
+                                            class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseCompany" class="accordion-collapse collapse show">
+                                    <div class="accordion-body text-body pt-0">
+                                        <div class="search-box search-box-sm">
+                                            <input type="text" class="form-control bg-light border-0"
+                                                id="searchBrandsList" placeholder=" بحث عن مكتب ... ">
+                                            <i class="ri-search-line search-icon"></i>
+                                        </div>
+                                        <div class="d-flex flex-column gap-2 mt-3 filter-check">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="companyRadio5">
+                                                <label class="form-check-label" for="companyRadio5"> روفد </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="companyRadio4">
+                                                <label class="form-check-label" for="companyRadio4"> الشرق </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="companyRadio3">
+                                                <label class="form-check-label" for="companyRadio3"> العامة
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="companyRadio2">
+                                                <label class="form-check-label" for="companyRadio2"> سهل </label>
+                                            </div>
+                                            <div>
+                                                <button type="button"
+                                                    class="btn btn-link text-decoration-none text-uppercase fw-medium p-0">1,235
+                                                    اخري </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseAge"
+                                        aria-expanded="true" aria-controls="flush-collapseAge">
+                                        <span class="text-muted text-uppercase fs-12 fw-medium"> العمر </span> <span
+                                            class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseAge" class="accordion-collapse collapse">
+                                    <div class="accordion-body text-body pt-1">
+                                        <div class="d-flex flex-column gap-2 filter-check" id="Age-filter">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="age" type="radio" value="50"
+                                                    id="ageRadio6">
+                                                <label class="form-check-label" for="ageRadio6">
+                                                    من 20 الي 30
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="age" type="radio" value="40"
+                                                    id="ageRadio5">
+                                                <label class="form-check-label" for="ageRadio5">
+                                                    من 30 الي 40
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="age" type="radio" value="30"
+                                                    id="ageRadio4">
+                                                <label class="form-check-label" for="ageRadio4">
+                                                    من 40 الي 50
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseNationality"
+                                        aria-expanded="true" aria-controls="flush-collapseNationality">
+                                        <span class="text-muted text-uppercase fs-12 fw-medium"> الجنسية </span> <span
+                                            class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseNationality" class="accordion-collapse collapse">
+                                    <div class="accordion-body text-body pt-1">
+                                        <div class="d-flex flex-column gap-2 filter-check" id="Nationality-filter">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Nationality" type="radio"
+                                                    value="50" id="NationalityRadio6">
+                                                <label class="form-check-label" for="NationalityRadio6">
+                                                    الهند
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Nationality" type="radio"
+                                                    value="40" id="NationalityRadio5">
+                                                <label class="form-check-label" for="NationalityRadio5">
+                                                    الفلبين
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Nationality" type="radio"
+                                                    value="30" id="NationalityRadio4">
+                                                <label class="form-check-label" for="NationalityRadio4">
+                                                    نيجيريا
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <div class="flex-grow-1">
+                    <div class="search-box mb-4">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="البحث عن ...">
+                        <i class="ri-search-line search-icon"></i>
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-1.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4> خالد توفيق مجدى </h4>
+                                    <div class="age"> <span> 24</span> سنة </div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p> الجنسية </p>
+                                        <h6> هندي </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> المهنة </p>
+                                        <h6> سائق خاص </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الديانة </p>
+                                        <h6> مسلم </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الحالة الاجتماعية </p>
+                                        <h6> أعزب </h6>
+                                    </div>
+                                </div>
+                                <span class="more btn "> عرض التفاصيل </span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-2.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>عائشة محمد صالح</h4>
+                                    <div class="age"><span>28</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>سودانية</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>ممرضة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلمة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>متزوجة</h6>
+                                    </div>
+                                </div> <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-3.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>علي عبدالله الحمود</h4>
+                                    <div class="age"><span>32</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>سعودي</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>مهندس مدني</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلم</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>متزوج</h6>
+                                    </div>
+                                </div>
+                                <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-4.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>نورة سعد الدين</h4>
+                                    <div class="age"><span>26</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>مصرية</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>محاسبة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلمة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>أعزبة</h6>
+                                    </div>
+                                </div>
+                                <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-1.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4> خالد توفيق مجدى </h4>
+                                    <div class="age"> <span> 24</span> سنة </div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p> الجنسية </p>
+                                        <h6> هندي </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> المهنة </p>
+                                        <h6> سائق خاص </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الديانة </p>
+                                        <h6> مسلم </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الحالة الاجتماعية </p>
+                                        <h6> أعزب </h6>
+                                    </div>
+                                </div>
+                                <span class="more btn "> عرض التفاصيل </span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-2.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>عائشة محمد صالح</h4>
+                                    <div class="age"><span>28</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>سودانية</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>ممرضة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلمة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>متزوجة</h6>
+                                    </div>
+                                </div> <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-3.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>علي عبدالله الحمود</h4>
+                                    <div class="age"><span>32</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>سعودي</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>مهندس مدني</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلم</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>متزوج</h6>
+                                    </div>
+                                </div>
+                                <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-4.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4>نورة سعد الدين</h4>
+                                    <div class="age"><span>26</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>مصرية</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>محاسبة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلمة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>أعزبة</h6>
+                                    </div>
+                                </div>
+                                <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-sm-6">
+                            <a href="#!" class="cv">
+                                <img src="assets/images/users/avatar-1.jpg" alt="">
+                                <div class="mainInfo">
+                                    <h4> خالد توفيق مجدى </h4>
+                                    <div class="age"> <span> 24</span> سنة </div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p> الجنسية </p>
+                                        <h6> هندي </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> المهنة </p>
+                                        <h6> سائق خاص </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الديانة </p>
+                                        <h6> مسلم </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الحالة الاجتماعية </p>
+                                        <h6> أعزب </h6>
+                                    </div>
+                                </div>
+                                <span class="more btn "> عرض التفاصيل </span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div
+                        class="pagination-block pagination pagination-separated justify-content-center justify-content-sm-end  my-4">
+                        <div class="page-item">
+                            <a href="javascript:void(0);" class="page-link" id="page-prev"> السابق </a>
+                        </div>
+                        <span id="page-num" class="pagination"></span>
+                        <div class="page-item">
+                            <a href="javascript:void(0);" class="page-link" id="page-next"> التالي </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center py-5">
+                                <div class="avatar-lg mx-auto mb-4">
+                                    <div class="avatar-title bg-primary-subtle text-primary rounded-circle fs-24">
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                </div>
+                                <h5> عذرًا، لم يتم العثور على أي سجلات مطابقة. </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="section footer-landing pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <img src="assets/images/logoV-light.svg" alt="" class="logo logo-light">
+                        <img src="assets/images/logoV.svg" alt="" class="logo logo-dark">
+                        <p class="footer-desc mt-4 mb-2 me-3">
+                            نهتم في عالم الاستقدام بخدمتكم عن طريق قنوات تواصل متعددة ونضمن لكم خدمة متكاملة وتجربة عميل
+                            مميزة
+                        </p>
+                        <div class="footer-social mt-4">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-snapchat"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title"> روابط سريعة </h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="#!"> مكاتب الاستقدام </a></li>
+                                    <li><a href="#!"> طلب استقدام </a></li>
+                                    <li><a href="#!"> الأسئلة الشائعة </a></li>
+                                    <li><a href="#!"> الشروط والاحكام </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title">الدعم</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="#!"> مركز المساعدة </a></li>
+                                    <li><a href="#!"> المقالات </a></li>
+                                    <li><a href="#!"> انضم الينا </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title"> حسابي </h5>
+                                <ul class="list-unstyled footer-link mt-3 d-flex gap-3 d-md-block">
+                                    <li><a href="#!"> تسجيل الدخول </a></li>
+                                    <li><a href="#!"> انشاء حساب </a></li>
+                                    <li><a href="#!"> طلبات الاستقدام </a></li>
+                                    <li><a href="#!"> حسابي </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">
+                <script>document.write(new Date().getFullYear())</script> © عالم الاستقدام . تصميم وتطوير
+                <a href="https://nami-tec.com/" target="_blank">
+                    <img src="assets/images/namiFav.svg" alt="">
+                    Nami
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!-- isotope-layout -->
+    <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- Countdown js -->
+    <script src="assets/js/frontend/menu.init.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/frontend/custom.js"></script>
+</body>
+
+</html>

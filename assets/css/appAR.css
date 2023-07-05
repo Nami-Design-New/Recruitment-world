@@ -12878,8 +12878,8 @@ span.flatpickr-weekday {
   display: none;
 }
 .track-orders .order-tracking::before {
-  width: 150%;
-  left: -104%;
+  width: 100%;
+  left: -50%;
 }
 .invoice-table tbody:last-child {
   border: none;
@@ -12917,3 +12917,12 @@ span.flatpickr-weekday {
   transform: scaleX(-1);
 }
 /*# sourceMappingURL=app.min.css.map */
+.fancybox__track,
+.fancybox__content,
+.carousel__track {
+  direction: ltr !important;
+}
+
+.form-select{
+  padding: .6rem .9rem .6rem  2.7rem;
+}

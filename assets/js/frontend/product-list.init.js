@@ -1,5 +1,5 @@
 /*
-Template Name: Recruitment world Recruitment world
+Template Name: عالم الاستقدام عالم الاستقدام
 Author: Nami
 Version: 1.0.0
 Website: https://Nami.com/

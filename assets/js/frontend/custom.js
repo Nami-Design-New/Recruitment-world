@@ -141,7 +141,7 @@ var swiper = new Swiper(".productSwiper", {
   },
 });
 var swiper2 = new Swiper(".productSwiper2", {
-  loop: true,
+  // loop: true,
   spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",

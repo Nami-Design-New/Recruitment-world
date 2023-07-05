@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Recruitment world</title>
+    <title>عالم الاستقدام</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Recruitment world" name="description">
+    <meta content="عالم الاستقدام" name="description">
     <meta content="Nami" name="author">
-    <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/fav.svg">
+    <!-- Bootstrap Css -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
     <!--Swiper slider css-->
     <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
     <!--font Awesome -->
     <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
-    <!-- Bootstrap Css -->
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
+    <!-- fancybox Css -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
     <!-- App Css-->
     <!-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/css/appAR.css" rel="stylesheet" type="text/css">
@@ -221,7 +222,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section ">
         <div class="container">
             <div class="row gx-2">
                 <div class="col-lg-6">
@@ -245,16 +246,20 @@
                         <div class="col-md-10">
                             <div class="bg-light rounded-2 position-relative ribbon-box overflow-hidden">
                                 <div class="ribbon ribbon-danger ribbon-shape trending-ribbon">
-                                    <span class="trending-ribbon-text"> اضيف حديثاً </span>
-                                    <i class="ri-flashlight-fill text-white align-bottom float-end ms-1"></i>
+                                    <i class="fa fa-briefcase  text-white "></i>
+                                    <span class="trending-ribbon-text"> سائق خاص </span>
                                 </div>
                                 <div class="swiper productSwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide ">
-                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="img-fluid" />
+                                            <a data-fancybox="CV1" href="assets/images/users/avatar-3.jpg">
+                                                <img src="assets/images/users/avatar-3.jpg" alt="">
+                                            </a>
                                         </div>
                                         <div class="swiper-slide ">
-                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="img-fluid" />
+                                            <a data-fancybox="CV1" href="assets/images/users/avatar-5.jpg">
+                                                <img src="assets/images/users/avatar-5.jpg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="swiper-button-next bg-transparent"></div>
@@ -305,12 +310,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center gap-1 my-4">
+                            <div class="d-flex flex-column  gap-1 my-4">
                                 <span class="text-muted fs-14"> سعر الاستقدام : </span>
-                                <h2 class="fw-bold ">
+                                <h1 class="fw-bold text-primary">
                                     500
                                     <span class="text-muted fw-normal fs-14"> ريال </span>
-                                </h2>
+                                </h1>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -330,104 +335,99 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section pt-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="nav nav-tabs nav-tabs-custom mb-3" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">
-                                المواصفات الشخصية
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">
-                                جواز السفر
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab3" role="tab">
-                                خبرة العمل
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content text-muted">
-                        <div class="tab-pane active" id="tab1" role="tabpanel">
-                            <table class="table table-sm table-borderless align-middle">
-                                <tr>
-                                    <th> تاريخ الميلاد : </th>
-                                    <td> 10-10-1990 </td>
-                                </tr>
-                                <tr>
-                                    <th> السن : </th>
-                                    <td> 25 سنة </td>
-                                </tr>
-                                <tr>
-                                    <th> مكان الميلاد : </th>
-                                    <td> الهند </td>
-                                </tr>
-                                <tr>
-                                    <th> الطول : </th>
-                                    <td> 166 </td>
-                                </tr>
-                                <tr>
-                                    <th> الوزن : </th>
-                                    <td> 59 </td>
-                                </tr>
-                                <tr>
-                                    <th> عدد الاطفال : </th>
-                                    <td> 5 </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="tab-pane" id="tab2" role="tabpanel">
-                            <table class="table table-sm table-borderless align-middle">
-                                <tr>
-                                    <th> رقم جواز السفر : </th>
-                                    <td> MFFKFIP54 </td>
-                                </tr>
-                                <tr>
-                                    <th> مكان الاصدار : </th>
-                                    <td> INDIA </td>
-                                </tr>
-                                <tr>
-                                    <th> تاريخ الاصدار : </th>
-                                    <td> 10-10-1990 </td>
-                                </tr>
-                                <tr>
-                                    <th> تاريخ الانتهاء : </th>
-                                    <td> 10-10-1990 </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="tab-pane" id="tab3" role="tabpanel">
-                            <table class="table table-sm table-borderless align-middle">
-                                <tr>
-                                    <th> القيادة : </th>
-                                    <td> جيد </td>
-                                </tr>
-                                <tr>
-                                    <th> الطبخ : </th>
-                                    <td> جيد </td>
-                                </tr>
-                                <tr>
-                                    <th> التنظيف : </th>
-                                    <td> جيد </td>
-                                </tr>
-                                <tr>
-                                    <th> الغسيل : </th>
-                                    <td> جيد </td>
-                                </tr>
+        <div class="container badge-soft-primary p-3 rounded-3 mt-3">
+            <ul class="nav nav-tabs nav-tabs-custom mb-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">
+                        المواصفات الشخصية
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">
+                        جواز السفر
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tab3" role="tab">
+                        خبرة العمل
+                    </a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content text-muted">
+                <div class="tab-pane active" id="tab1" role="tabpanel">
+                    <table class="table table-sm table-borderless align-middle">
+                        <tr>
+                            <th> تاريخ الميلاد : </th>
+                            <td> 10-10-1990 </td>
+                        </tr>
+                        <tr>
+                            <th> السن : </th>
+                            <td> 25 سنة </td>
+                        </tr>
+                        <tr>
+                            <th> مكان الميلاد : </th>
+                            <td> الهند </td>
+                        </tr>
+                        <tr>
+                            <th> الطول : </th>
+                            <td> 166 </td>
+                        </tr>
+                        <tr>
+                            <th> الوزن : </th>
+                            <td> 59 </td>
+                        </tr>
+                        <tr>
+                            <th> عدد الاطفال : </th>
+                            <td> 5 </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab2" role="tabpanel">
+                    <table class="table table-sm table-borderless align-middle">
+                        <tr>
+                            <th> رقم جواز السفر : </th>
+                            <td> MFFKFIP54 </td>
+                        </tr>
+                        <tr>
+                            <th> مكان الاصدار : </th>
+                            <td> INDIA </td>
+                        </tr>
+                        <tr>
+                            <th> تاريخ الاصدار : </th>
+                            <td> 10-10-1990 </td>
+                        </tr>
+                        <tr>
+                            <th> تاريخ الانتهاء : </th>
+                            <td> 10-10-1990 </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab3" role="tabpanel">
+                    <table class="table table-sm table-borderless align-middle">
+                        <tr>
+                            <th> القيادة : </th>
+                            <td> جيد </td>
+                        </tr>
+                        <tr>
+                            <th> الطبخ : </th>
+                            <td> جيد </td>
+                        </tr>
+                        <tr>
+                            <th> التنظيف : </th>
+                            <td> جيد </td>
+                        </tr>
+                        <tr>
+                            <th> الغسيل : </th>
+                            <td> جيد </td>
+                        </tr>
 
-                            </table>
-                        </div>
-                    </div>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="section">
         <div class="container">
             <div class="row justify-content-center">
@@ -644,6 +644,7 @@
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <!-- Countdown js -->
     <script src="assets/js/frontend/menu.init.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/frontend/custom.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 /*
-Template Name: Recruitment world Recruitment world
+Template Name: عالم الاستقدام عالم الاستقدام
 Author: Nami
 Website: https://Nami.com/
 Contact: Nami@gmail.com

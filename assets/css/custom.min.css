@@ -274,6 +274,7 @@ h6 {
   background-color: rgba(73, 114, 183, 0.1254901961);
   color: var(--mainColor);
   border-radius: 12px;
+  margin-top: auto;
 }
 .cv:hover {
   background-color: rgba(73, 114, 183, 0.2509803922);
@@ -381,4 +382,18 @@ h6 {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.fancybox__container {
+  z-index: 1999;
+}
+
+.ribbon-box .trending-ribbon {
+  transform: translateX(0);
+  display: flex !important;
+  align-items: baseline;
+  gap: 8px;
+}
+.ribbon-box .trending-ribbon .trending-ribbon-text {
+  opacity: 1;
 }/*# sourceMappingURL=custom.min.css.map */
