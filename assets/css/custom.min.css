@@ -410,4 +410,16 @@ h6 {
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0.7rem 0.25rem;
+}
+
+.requests tr:last-child {
+  border-color: white;
+}
+
+.btn {
+  --tb-btn-padding-y: 0.4rem;
 }/*# sourceMappingURL=custom.min.css.map */
