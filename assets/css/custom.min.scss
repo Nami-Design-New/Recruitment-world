@@ -30,7 +30,7 @@ h6 {
     padding: 48px 8px;
   }
 }
-$mainColor: #09463f;
+$mainColor: #637790;
 $secondColor: #dcb065;
 $gold: #ffd700;
 $white-color: #ffffff;
@@ -513,8 +513,7 @@ $BigShadow: 0px 8px 24px #00000020;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: $shadow;
-    background: $white-color;
+    
     img {
       height: 80px;
       width: 80px;
@@ -530,7 +529,7 @@ $BigShadow: 0px 8px 24px #00000020;
     }
   }
   .contact {
-    padding: 10px 20px;
+    padding: 10px ;
     background-color: $white-color;
     border-radius: 8px;
     display: flex;
@@ -541,23 +540,25 @@ $BigShadow: 0px 8px 24px #00000020;
     height: 100%;
     text-align: center;
     color: $black-color;
+    p{
+      margin-bottom: 0;
+    }
     i {
       font-size: 35px;
       display: block;
       margin-bottom: 10px;
-      &.fa-whatsapp-square {
-        color: #038735;
-      }
-      &.fa-square-phone {
-        color: #1e90ff;
-      }
+      
+      // &.fa-whatsapp-square {
+      //   color: #038735;
+      // }
+      // &.fa-square-phone {
+      //   color: #1e90ff;
+      // }
+      color: #1e90ff;
     }
     &:hover {
-      background-color: $secondColor;
+      background-color: #f3f3f3;
       color: $mainColor;
-      // i {
-      //   color: $mainColor  !important;
-      // }
     }
   }
 }
