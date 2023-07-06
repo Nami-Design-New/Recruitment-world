@@ -422,4 +422,146 @@ h6 {
 
 .btn {
   --tb-btn-padding-y: 0.4rem;
+}
+
+.selectCustomerService {
+  padding: 70px 0;
+}
+.selectCustomerService .headTitle p {
+  color: #777;
+  font-weight: bold;
+}
+.selectCustomerService .headTitle h2 {
+  font-size: 36px !important;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.selectCustomerService .choose {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c7d2d6;
+  padding: 20px;
+  border-radius: 10px;
+}
+.selectCustomerService .choose .customerOption {
+  width: 100%;
+}
+.selectCustomerService .choose .btn {
+  padding: 15px 20px;
+  box-shadow: none;
+  width: 96%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  border: 4px solid transparent;
+}
+.selectCustomerService .choose .btn img {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.selectCustomerService .choose .btn span {
+  text-transform: capitalize;
+}
+.selectCustomerService .choose .btn-check:active + .btn-outline,
+.selectCustomerService .choose .btn-check:checked + .btn-outline,
+.selectCustomerService .choose .btn-outline.active,
+.selectCustomerService .choose .btn-outline.dropdown-toggle.show,
+.selectCustomerService .choose .btn-outline:active {
+  background-color: #ffffff;
+  color: #09463f;
+  border: 4px solid #09463f;
+}
+.selectCustomerService .choose .btn-check:active + .btn-outline::after,
+.selectCustomerService .choose .btn-check:checked + .btn-outline::after,
+.selectCustomerService .choose .btn-outline.active::after,
+.selectCustomerService .choose .btn-outline.dropdown-toggle.show::after,
+.selectCustomerService .choose .btn-outline:active::after {
+  content: "\f336" !important;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: bold;
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 10px;
+}
+
+.contactCustomerService {
+  padding: 70px 0;
+  margin-top: 100px;
+}
+
+.selectedCustomer {
+  border-radius: 8px;
+  isolation: isolate;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1254901961);
+  margin: 10px 0;
+  text-align: center;
+}
+.selectedCustomer h6 {
+  line-height: 30px;
+}
+.selectedCustomer h6 span {
+  font-weight: bold;
+  color: #09463f;
+  padding: 0px 5px;
+}
+
+.selectedCustomerInfo .info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1254901961);
+  background: #ffffff;
+}
+.selectedCustomerInfo .info img {
+  height: 80px;
+  width: 80px;
+  margin: 0 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.selectedCustomerInfo .info .text h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #09463f;
+}
+.selectedCustomerInfo .contact {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1254901961);
+  height: 100%;
+  text-align: center;
+  color: #292929;
+}
+.selectedCustomerInfo .contact i {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 10px;
+}
+.selectedCustomerInfo .contact i.fa-whatsapp-square {
+  color: #038735;
+}
+.selectedCustomerInfo .contact i.fa-square-phone {
+  color: #1e90ff;
+}
+.selectedCustomerInfo .contact:hover {
+  background-color: #dcb065;
+  color: #09463f;
 }/*# sourceMappingURL=custom.min.css.map */
