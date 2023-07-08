@@ -560,4 +560,22 @@ h6 {
 .selectedCustomerInfo .contact:hover {
   background-color: #f3f3f3;
   color: #637790;
+}
+
+.filter button {
+  width: 45px;
+  height: 45px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #edf4ff;
+  color: #637790;
+  border-radius: 4px;
+  font-size: 14px;
+}
+@media (max-width: 567px) {
+  .filter button {
+    display: flex;
+  }
 }/*# sourceMappingURL=custom.min.css.map */
