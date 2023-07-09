@@ -598,6 +598,13 @@ h6 {
   height: 28px;
 }
 
+.open-filters {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 99999;
+}
+
 @media (max-width: 576px) {
   #sidebar {
     overflow-y: scroll;
