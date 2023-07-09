@@ -562,20 +562,57 @@ h6 {
   color: #637790;
 }
 
+.filter {
+  padding-top: 40px;
+}
 .filter button {
-  width: 45px;
+  width: 100px;
   height: 45px;
   display: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   border: none;
   background-color: #edf4ff;
   color: #637790;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+.filter button i {
   font-size: 14px;
 }
 @media (max-width: 567px) {
   .filter button {
     display: flex;
+  }
+}
+
+.close-sort {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.close-sort button {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 576px) {
+  #sidebar {
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    transition: 0.5s ease-in-out;
+  }
+  #sidebar.show {
+    left: 0;
+  }
+  .card {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=custom.min.css.map */

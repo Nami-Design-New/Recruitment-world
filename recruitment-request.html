@@ -227,19 +227,22 @@
     </section>
     <section class="section filter">
         <div class="container">
-            <button><i class="fas fa-sort"></i></button>
+            <div class="row mb-5 p-2 justify-content-center align-items-center">
+                <button class="sortOpen">الفلاتر<i class="fas fa-sort"></i></button>
+            </div>
             <div class="ecommerce-product gap-4">
-                <div class="sidebar small-sidebar flex-shrink-0">
+                <div id="sidebar" class="sidebar small-sidebar flex-shrink-0">
                     <div class="card overflow-hidden">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-1">
                                     <h5 class="fs-16 mb-0">الفلاتر</h5>
                                 </div>
-                                <div class="flex-shrink-0">
+                                <div class="flex-shrink-0 close-sort">
                                     <a href="#" class="text-decoration-underline" id="clearall">
                                         مسح الكل
                                     </a>
+                                    <button class="sortOpen"><i class="fas fa-times"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -583,7 +586,6 @@
                                 </div> <span class="more btn ">عرض التفاصيل</span>
                             </a>
                         </div>
-
                     </div>
                     <div
                         class="pagination-block pagination pagination-separated justify-content-center justify-content-sm-end  my-4">
@@ -696,6 +698,15 @@
     <script src="assets/js/menu.init.js"></script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        let sidebar = document.querySelector("#sidebar");
+        let openSideBarBtns = document.querySelectorAll(".sortOpen");
+        openSideBarBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                sidebar.classList.toggle("show");
+            })
+        })
+    </script>
 </body>
 
 </html>
