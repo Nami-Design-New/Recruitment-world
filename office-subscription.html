@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>عالم الاستقدام</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="عالم الاستقدام" name="description">
+    <meta content="Nami" name="author">
+    <link rel="shortcut icon" href="assets/images/fav.svg">
+    <!-- Bootstrap Css -->
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
+    <!--Swiper slider css-->
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <!--font Awesome -->
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- fancybox Css -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <!-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/appAR.css" rel="stylesheet" type="text/css">
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css">
+    <!-- dropify -->
+    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top-tagbar">
+        <div class="w-100">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4 col-9">
+                    <div class="fs-14 fw-medium">
+                        <i class="bi bi-geo-alt align-middle me-2"></i> الرياض - المملكة العربية السعودية
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 d-none d-xxl-block">
+                    <div class="d-flex align-items-center justify-content-center gap-3 fs-14 fw-medium">
+                        <div>
+                            <i class="bi bi-envelope align-middle me-2"></i> email@email.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-3">
+                    <div class="d-flex align-items-center justify-content-end gap-3 fs-14">
+                        <div class="text-reset fw-normal d-none d-lg-block">
+                            <i class="bi bi-telephone-outbound align-middle me-2"></i> +(966) 01234 5678
+                        </div>
+                        <hr class="vr d-none d-lg-block">
+                        <div class="dropdown topbar-head-dropdown topbar-tag-dropdown justify-content-end">
+                            <button type="button"
+                                class="btn btn-icon btn-topbar text-reset rounded-circle fs-14 fw-medium"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="assets/images/flags/sa.svg" alt="Header Language"
+                                    height="16" class="rounded-circle me-2"> <span id="lang-name">عربى</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2"
+                                    data-lang="en" title="English">
+                                    <img src="assets/images/flags/us.svg" alt="user-image" class="me-2 rounded-circle"
+                                        height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sa"
+                                    title="Arabic">
+                                    <img src="assets/images/flags/sa.svg" alt="user-image" class="me-2 rounded-circle"
+                                        height="18">
+                                    <span class="align-middle">عربى</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg ecommerce-navbar" id="navbar">
+        <div class="container">
+            <!-- collapse Btn -->
+            <button class="btn btn-soft-primary btn-icon d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-20"></i>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand " href="index.html">
+                <div class="logo-dark">
+                    <img src="assets/images/logoV.svg" alt="">
+                </div>
+                <div class="logo-light">
+                    <img src="assets/images/logoV-light.svg" alt="">
+                </div>
+            </a>
+            <!-- main links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0" id="navigation-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> الرئيسية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="office-subscription.html"> اشتراك </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recruitment-request.html"> طلب استقدام </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="track-order.html"> تتبع الطلب </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html"> من نحن </a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الدعم
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md dropdown-menu-center dropdown-menu-list submenu">
+                            <li class="nav-item">
+                                <a href="blogs.html" class="nav-link"> المقالات </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="faq.html" class="nav-link"> مركز المساعدة </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="privacy-policy.html" class="nav-link"> سياسة الخصوصية </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"> تواصل معنا </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- close overlay -->
+            <div class="bg-overlay navbar-overlay" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            </div>
+            <!-- profile -->
+            <div class="d-flex align-items-center">
+                <div class="dropdown header-item dropdown-hover-end">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
+                            alt="Header Avatar">
+                    </button>
+                    <!-- <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+                        id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ph-user-circle fs-22"></i>
+                    </button> -->
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header"> ريان سلمون </h6>
+                        <a class="dropdown-item" href="account.html"> <i class="fa-light fa-user"></i> حسابي </a>
+                        <a class="dropdown-item" href="auth-signin.html"> <i
+                                class="fa-sharp fa-light fa-arrow-right-to-arc"></i>
+                            تسجيل الدخول </a>
+                        <a class="dropdown-item" href="auth-signup.html"> <i class="fa-light fa-address-card"></i> انشاء
+                            حساب </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="auth-logout.html"> <i
+                                class="fa-light fa-arrow-right-from-bracket"></i> تسجيل
+                            الخروج </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="ecommerce-about"
+        style="background-image: url('assets/images/s2.webp'); background-size: cover;background-position: center;">
+        <div class="bg-overlay bg-primary" style="opacity: 0.85;"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h1 class="text-white mb-0"> اشتراك مكاتب الاستقدام </h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-light justify-content-center mt-4">
+                                <li class="breadcrumb-item"><a href="#"> الرئيسية </a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> اشتراك </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- supscription section -->
+    <section class="section">
+        <div class="container">
+            <form name="" action="#!">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-5">
+                            <h3 class="text-uppercase"> ادخل بيانات المكتب وأنضم الينا </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mt-3">
+                            <label for="nameInput" class="form-label">
+                                اسم المسئول<span class="text-danger">*</span>
+                            </label>
+                            <input name="nameInput" id="nameInput" type="text" class="form-control"
+                                placeholder="ادخل اسم المسئول">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mt-3">
+                            <label for="officeNameInput" class="form-label">
+                                اسم المكتب<span class="text-danger">*</span>
+                            </label>
+                            <input name="officeNameInput" id="officeNameInput" type="text" class="form-control"
+                                placeholder="ادخل اسم المكتب">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mt-3">
+                            <label for="numberInput" class="form-label">
+                                رقم الجوال <span class="text-danger">*</span>
+                            </label>
+                            <input name="numberInput" id="numberInput" type="tel" class="form-control"
+                                placeholder="ادخل رقم الجوال">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mt-3">
+                            <label for="emailInput" class="form-label">
+                                البريد الإلكتروني<span class="text-danger">*</span>
+                            </label>
+                            <input name="emailInput" id="emailInput" type="email" class="form-control"
+                                placeholder="ادخل البريد الإلكتروني">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group mt-3">
+                            <label for="commercialNOInput" class="form-label">
+                                رقم السجل التجارى (اختيارى)<span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="commercialNOInput"
+                                placeholder="20009855325312458">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group mt-3">
+                            <label for="imageInput" class="form-label">الصوره
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input name="file1" type="file" id="imageInput" class="dropify" data-height="120" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group mt-3">
+                            <input type="checkbox" id="accept" style="cursor: pointer;">
+                            <label style="cursor: pointer;" for="accept" class="form-label">&nbsp; الموافقة على الشروط
+                                والاحكام</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="text-end mt-4">
+                            <button type="submit" id="submit" name="submit" class="btn btn-primary">
+                                حفظ وانضمام
+                                <i class="bi bi-arrow-right-short align-middle fs-16 ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-info btn-icon" style="bottom: 50px;" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+    <!-- social media -->
+    <div class="social-media">
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <section class="section footer-landing pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <img src="assets/images/logoV-light.svg" alt="" class="logo logo-light">
+                        <img src="assets/images/logoV.svg" alt="" class="logo logo-dark">
+                        <p class="footer-desc mt-4 mb-2 me-3">
+                            نهتم في عالم الاستقدام بخدمتكم عن طريق قنوات تواصل متعددة ونضمن لكم خدمة متكاملة وتجربة عميل
+                            مميزة
+                        </p>
+                        <div class="footer-social mt-4">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="text-reset"><i class="fa-brands fa-snapchat"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title"> روابط سريعة </h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="#!"> مكاتب الاستقدام </a></li>
+                                    <li><a href="#!"> طلب استقدام </a></li>
+                                    <li><a href="#!"> الأسئلة الشائعة </a></li>
+                                    <li><a href="#!"> الشروط والاحكام </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title">الدعم</h5>
+                                <ul class="list-unstyled footer-link mt-3">
+                                    <li><a href="#!"> مركز المساعدة </a></li>
+                                    <li><a href="#!"> المقالات </a></li>
+                                    <li><a href="#!"> انضم الينا </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mt-lg-0 mt-4">
+                                <h5 class="footer-title"> حسابي </h5>
+                                <ul class="list-unstyled footer-link mt-3 d-flex gap-3 d-md-block">
+                                    <li><a href="#!"> تسجيل الدخول </a></li>
+                                    <li><a href="#!"> انشاء حساب </a></li>
+                                    <li><a href="#!"> طلبات الاستقدام </a></li>
+                                    <li><a href="#!"> حسابي </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">
+                <script>document.write(new Date().getFullYear())</script> © عالم الاستقدام . تصميم وتطوير
+                <a href="https://nami-tec.com/" target="_blank">
+                    <img src="assets/images/namiFav.svg" alt="">
+                    Nami
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/menu.init.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+    <script>
+        $('.dropify').dropify();
+    </script>
+</body>
+
+</html>

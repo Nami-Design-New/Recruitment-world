@@ -215,19 +215,22 @@ h6 {
   padding: 20px;
   border-radius: 16px;
   background-color: rgba(73, 114, 183, 0.062745098);
-  margin-top: 75px;
+  margin-top: 32px;
   color: #000;
   text-align: center;
   transition: 0.3s ease-in-out;
 }
-.cv img {
+.cv .img {
   height: 100px;
   width: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
   border-radius: 16px;
+  background: #f4f6fa;
   margin: -75px auto 16px;
   border: 4px solid #fff;
+}
+.cv .img img {
+  max-height: 100%;
+  mix-blend-mode: multiply;
 }
 .cv h5,
 .cv p,
@@ -565,7 +568,7 @@ h6 {
 .filter {
   padding-top: 40px;
 }
-.filter button {
+.filter .sortOpen {
   width: 100px;
   height: 45px;
   display: none;
@@ -579,11 +582,11 @@ h6 {
   font-weight: 500;
   padding: 0 15px;
 }
-.filter button i {
+.filter .sortOpen i {
   font-size: 14px;
 }
 @media (max-width: 567px) {
-  .filter button {
+  .filter .sortOpen {
     display: flex;
   }
 }
@@ -622,4 +625,175 @@ h6 {
   .card {
     margin-bottom: 0;
   }
+}
+.viedo-container {
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+.viedo-container .col-12 {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 16px;
+  background: #e4eaee;
+  box-shadow: rgba(135, 138, 153, 0.12) 0px 5px 10px;
+}
+.viedo-container .col-12 video {
+  width: 100%;
+  height: 100%;
+}
+
+.statics {
+  background: #e4eaee;
+}
+.statics .col-6 {
+  border-left: 1px solid #cdcdcd;
+}
+.statics .col-6:last-child {
+  border: none;
+}
+.statics h4 {
+  font-size: 20px;
+}
+.statics h5 {
+  font-size: 16px;
+}
+.statics .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: rgba(135, 138, 153, 0.12) 0px 5px 10px;
+}
+.statics .icon img {
+  max-width: 50%;
+}
+
+.imgall {
+  height: 324px;
+}
+.imgall img {
+  max-height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.social-media {
+  position: fixed;
+  left: 0;
+  top: 95%;
+  transform: translateY(-95%);
+  z-index: 9999;
+}
+.social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 8px 8px 0;
+  width: 60px;
+  direction: ltr;
+}
+.social-media ul li {
+  background: #4972b7;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.social-media ul li:first-child {
+  border-radius: 0 8px 0 0;
+}
+.social-media ul li:first-child:hover a i {
+  color: #4267b2;
+}
+.social-media ul li:last-child {
+  border-radius: 0 0 8px 0;
+}
+.social-media ul li:last-child:hover a i {
+  color: #f52b24;
+}
+.social-media ul li:hover {
+  width: 55px;
+  border-radius: 0 8px 8px 0;
+  background: #e4eaee;
+}
+.social-media ul li a {
+  color: #fff;
+}
+.social-media ul li:nth-child(3):hover a i {
+  color: #1da1f2;
+}
+.social-media ul li:nth-child(2):hover a i {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.aboutsec {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5019607843), rgba(255, 255, 255, 0.8549019608)), url(../images/bg2.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.reqruitment-request-steps {
+  padding-top: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5019607843), rgba(255, 255, 255, 0.8549019608)), url(../images/bg2.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+@media (max-width: 576px) {
+  .reqruitment-request-steps {
+    padding: 0 12px 32px;
+  }
+}
+.reqruitment-request-steps h4 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.reqruitment-request-steps .col-12 {
+  background: #e4eaee;
+  box-shadow: rgba(135, 138, 153, 0.12) 0px 5px 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.reqruitment-request-steps .col-12:hover {
+  transform: translateY(-8px);
+}
+.reqruitment-request-steps .col-12 h5 {
+  text-align: center;
+}
+.reqruitment-request-steps .col-12 p {
+  max-width: 250px;
+  text-align: center;
+  margin: 0;
+}
+.reqruitment-request-steps .col-12 .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-bottom: 16px;
+  box-shadow: rgba(135, 138, 153, 0.12) 0px 5px 10px;
+}
+.reqruitment-request-steps .col-12 .icon img {
+  max-width: 50%;
+}
+
+.txttt {
+  width: 180px;
 }/*# sourceMappingURL=custom.min.css.map */

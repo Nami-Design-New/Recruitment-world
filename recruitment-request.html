@@ -103,10 +103,13 @@
                         <a class="nav-link" href="index.html"> الرئيسية </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recruitment-offices.html"> مكاتب الاستقدام </a>
+                        <a class="nav-link" href="office-subscription.html"> اشتراك </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="recruitment-request.html"> طلب استقدام </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="track-order.html"> تتبع الطلب </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html"> من نحن </a>
@@ -410,6 +413,69 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- end accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseRelegion"
+                                        aria-expanded="true" aria-controls="flush-collapseRelegion">
+                                        <span class="text-muted text-uppercase fs-12 fw-medium"> الديانه </span> <span
+                                            class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseRelegion" class="accordion-collapse collapse">
+                                    <div class="accordion-body text-body pt-1">
+                                        <div class="d-flex flex-column gap-2 filter-check" id="Religion-filter">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Religion" type="radio" value="50"
+                                                    id="ReligionRadio6">
+                                                <label class="form-check-label" for="ReligionRadio6">
+                                                    مسلم
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Religion" type="radio" value="40"
+                                                    id="ReligionRadio5">
+                                                <label class="form-check-label" for="ReligionRadio5">
+                                                    غير مسلم
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseMirtal"
+                                        aria-expanded="true" aria-controls="flush-collapseMirtal">
+                                        <span class="text-muted text-uppercase fs-12 fw-medium">الحالة الاجتماعية</span>
+                                        <span
+                                            class="badge bg-success rounded-pill align-middle ms-1 filter-badge"></span>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseMirtal" class="accordion-collapse collapse">
+                                    <div class="accordion-body text-body pt-1">
+                                        <div class="d-flex flex-column gap-2 filter-check" id="Mirtal-filter">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Mirtal" type="radio" value="50"
+                                                    id="MirtalRadio6">
+                                                <label class="form-check-label" for="MirtalRadio6">
+                                                    اعزب
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Mirtal" type="radio" value="40"
+                                                    id="MirtalRadio5">
+                                                <label class="form-check-label" for="Mirtal Radio5">
+                                                    متزوج
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end card -->
@@ -419,26 +485,28 @@
                         <input type="text" class="form-control" autocomplete="off" placeholder="البحث عن ...">
                         <i class="ri-search-line search-icon"></i>
                     </div>
-                    <div class="row">
-                        <div class=" col-lg-4 col-sm-6">
+                    <div class="row filterpagecs">
+                        <div class="col-lg-4 col-sm-6">
                             <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-1.jpg" alt="">
-                                <div class="mainInfo">
-                                    <h4> خالد توفيق مجدى </h4>
+                                <div class="imgall">
+                                    <img src="assets/images/workers/cv.png" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
+                                    <h4>خديجه مجدى</h4>
                                     <div class="age"> <span> 24</span> سنة </div>
                                 </div>
                                 <div class="subInfo">
                                     <div class="sub">
                                         <p> الجنسية </p>
-                                        <h6> هندي </h6>
+                                        <h6> سودانيه </h6>
                                     </div>
                                     <div class="sub">
                                         <p> المهنة </p>
-                                        <h6> سائق خاص </h6>
+                                        <h6> عامله منزليه </h6>
                                     </div>
                                     <div class="sub">
                                         <p> الديانة </p>
-                                        <h6> مسلم </h6>
+                                        <h6> مسلمة </h6>
                                     </div>
                                     <div class="sub">
                                         <p> الحالة الاجتماعية </p>
@@ -448,21 +516,23 @@
                                 <span class="more btn "> عرض التفاصيل </span>
                             </a>
                         </div>
-                        <div class=" col-lg-4 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                <div class="mainInfo">
+                                <div class="imgall">
+                                    <img src="assets/images/workers/2.jpg" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
                                     <h4>عائشة محمد صالح</h4>
                                     <div class="age"><span>28</span> سنة</div>
                                 </div>
                                 <div class="subInfo">
                                     <div class="sub">
                                         <p>الجنسية</p>
-                                        <h6>سودانية</h6>
+                                        <h6>نيجيريه</h6>
                                     </div>
                                     <div class="sub">
                                         <p>المهنة</p>
-                                        <h6>ممرضة</h6>
+                                        <h6>طباخه</h6>
                                     </div>
                                     <div class="sub">
                                         <p>الديانة</p>
@@ -475,40 +545,104 @@
                                 </div> <span class="more btn ">عرض التفاصيل</span>
                             </a>
                         </div>
-                        <div class=" col-lg-4 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-3.jpg" alt="">
-                                <div class="mainInfo">
-                                    <h4>علي عبدالله الحمود</h4>
+                                <div class="imgall">
+                                    <img src="assets/images/workers/3.jpg" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
+                                    <h4> تحيه على الحمدون </h4>
                                     <div class="age"><span>32</span> سنة</div>
                                 </div>
                                 <div class="subInfo">
                                     <div class="sub">
                                         <p>الجنسية</p>
-                                        <h6>سعودي</h6>
+                                        <h6>هنديه</h6>
                                     </div>
                                     <div class="sub">
                                         <p>المهنة</p>
-                                        <h6>مهندس مدني</h6>
+                                        <h6> مربيه اطفال </h6>
                                     </div>
                                     <div class="sub">
                                         <p>الديانة</p>
-                                        <h6>مسلم</h6>
+                                        <h6>مسلمة</h6>
                                     </div>
                                     <div class="sub">
                                         <p>الحالة الاجتماعية</p>
-                                        <h6>متزوج</h6>
+                                        <h6>متزوجة</h6>
                                     </div>
                                 </div>
                                 <span class="more btn ">عرض التفاصيل</span>
                             </a>
                         </div>
-                        <div class=" col-lg-4 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-4.jpg" alt="">
-                                <div class="mainInfo">
+                                <div class="imgall">
+                                    <img src="assets/images/workers/4.jpg" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
                                     <h4>نورة سعد الدين</h4>
                                     <div class="age"><span>26</span> سنة</div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p>الجنسية</p>
+                                        <h6>كينيه</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>المهنة</p>
+                                        <h6>ساحره</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الديانة</p>
+                                        <h6>مسلمة</h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p>الحالة الاجتماعية</p>
+                                        <h6>متزوجة</h6>
+                                    </div>
+                                </div>
+                                <span class="more btn ">عرض التفاصيل</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="cv-details.html" class="cv">
+                                <div class="imgall">
+                                    <img src="assets/images/workers/5.jpg" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
+                                    <h4> رقيه توفيق مجدى </h4>
+                                    <div class="age"> <span> 24</span> سنة </div>
+                                </div>
+                                <div class="subInfo">
+                                    <div class="sub">
+                                        <p> الجنسية </p>
+                                        <h6> فلبينيه </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> المهنة </p>
+                                        <h6> عاملة منزلية </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الديانة </p>
+                                        <h6> مسلمة </h6>
+                                    </div>
+                                    <div class="sub">
+                                        <p> الحالة الاجتماعية </p>
+                                        <h6> عزباء </h6>
+                                    </div>
+                                </div>
+                                <span class="more btn "> عرض التفاصيل </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="cv-details.html" class="cv">
+                                <div class="imgall">
+                                    <img src="assets/images/workers/6.jpg" alt="">
+                                </div>
+                                <div class="mainInfo mt-3">
+                                    <h4>عائشة محمد صالح</h4>
+                                    <div class="age"><span>28</span> سنة</div>
                                 </div>
                                 <div class="subInfo">
                                     <div class="sub">
@@ -517,63 +651,7 @@
                                     </div>
                                     <div class="sub">
                                         <p>المهنة</p>
-                                        <h6>محاسبة</h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p>الديانة</p>
-                                        <h6>مسلمة</h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p>الحالة الاجتماعية</p>
-                                        <h6>أعزبة</h6>
-                                    </div>
-                                </div>
-                                <span class="more btn ">عرض التفاصيل</span>
-                            </a>
-                        </div>
-                        <div class=" col-lg-4 col-sm-6">
-                            <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-1.jpg" alt="">
-                                <div class="mainInfo">
-                                    <h4> خالد توفيق مجدى </h4>
-                                    <div class="age"> <span> 24</span> سنة </div>
-                                </div>
-                                <div class="subInfo">
-                                    <div class="sub">
-                                        <p> الجنسية </p>
-                                        <h6> هندي </h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p> المهنة </p>
-                                        <h6> سائق خاص </h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p> الديانة </p>
-                                        <h6> مسلم </h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p> الحالة الاجتماعية </p>
-                                        <h6> أعزب </h6>
-                                    </div>
-                                </div>
-                                <span class="more btn "> عرض التفاصيل </span>
-                            </a>
-                        </div>
-                        <div class=" col-lg-4 col-sm-6">
-                            <a href="cv-details.html" class="cv">
-                                <img src="assets/images/users/avatar-2.jpg" alt="">
-                                <div class="mainInfo">
-                                    <h4>عائشة محمد صالح</h4>
-                                    <div class="age"><span>28</span> سنة</div>
-                                </div>
-                                <div class="subInfo">
-                                    <div class="sub">
-                                        <p>الجنسية</p>
-                                        <h6>سودانية</h6>
-                                    </div>
-                                    <div class="sub">
-                                        <p>المهنة</p>
-                                        <h6>ممرضة</h6>
+                                        <h6>مربيه اطفال</h6>
                                     </div>
                                     <div class="sub">
                                         <p>الديانة</p>
@@ -613,6 +691,24 @@
             </div>
         </div>
     </section>
+    <!-- social media -->
+    <div class="social-media">
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
     <!-- footer -->
     <section class="section footer-landing pb-0">
         <div class="container">

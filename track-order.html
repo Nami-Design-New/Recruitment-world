@@ -103,10 +103,13 @@
                         <a class="nav-link" href="index.html"> الرئيسية </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recruitment-offices.html"> مكاتب الاستقدام </a>
+                        <a class="nav-link" href="office-subscription.html"> اشتراك </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="recruitment-request.html"> طلب استقدام </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="track-order.html"> تتبع الطلب </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html"> من نحن </a>
@@ -157,14 +160,14 @@
                                 class="fa-sharp fa-light fa-arrow-right-to-arc"></i>
                             تسجيل الدخول </a>
                         <a class="dropdown-item" href="auth-signup.html"> <i class="fa-light fa-address-card"></i> انشاء
-                            حساب </a <div class="dropdown-divider">
+                            حساب </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="auth-logout.html"> <i
+                                class="fa-light fa-arrow-right-from-bracket"></i> تسجيل
+                            الخروج </a>
                     </div>
-                    <a class="dropdown-item" href="auth-logout.html"> <i
-                            class="fa-light fa-arrow-right-from-bracket"></i> تسجيل
-                        الخروج </a>
                 </div>
             </div>
-        </div>
         </div>
     </nav>
     <!-- subscribe Modal -->
@@ -226,6 +229,10 @@
     <!-- end page title -->
     <section class="section">
         <div class="container">
+            <div class="search-box mb-4">
+                <input type="text" class="form-control" autocomplete="off" placeholder="رقم الطلب…">
+                <i class="ri-search-line search-icon"></i>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="mb-4 pb-2">
@@ -235,40 +242,76 @@
             </div>
             <div class="track-orders">
                 <div class="row justify-content-between gy-4 gy-md-0">
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 completed"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4"> اختيار العمالة </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 completed d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4"> اختيار العمالة </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 completed"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4"> حجز السيره الذاتية </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 completed d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4"> حجز السيره الذاتية </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4">اختار احد ممثلى خدمة العملاء </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4">اختار احد ممثلى خدمة العملاء </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4">ابرام التعاقد </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4">ابرام التعاقد </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4">اصدار تاشيرة </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4">اصدار تاشيرة </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
-                    <div class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0"> <span
-                            class="is-complete"></span>
-                        <h6 class="fs-15 mt-3 mt-md-4"> وصول العمالة </h6>
-                        <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                    <div
+                        class="col-md-2 order-tracking text-start text-md-center ps-4 ps-md-0 d-flex flex-lg-column flex-row-reverse align-items-center">
+                        <span class="is-complete"></span>
+                        <div class="txttt">
+                            <h6 class="fs-15 mt-3 mt-md-4"> وصول العمالة </h6>
+                            <p class="text-muted fs-14 mb-0">الإثنين، 23 نوفمبر</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- social media -->
+    <div class="social-media">
+        <ul>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
     <!-- footer -->
     <section class="section footer-landing pb-0">
         <div class="container">
