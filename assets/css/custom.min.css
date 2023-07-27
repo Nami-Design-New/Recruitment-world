@@ -651,7 +651,7 @@ h6 {
 }
 
 .statics {
-  background: #edf4ff;
+  background-color: #edf4ff;
 }
 .statics .col-6 {
   border-left: 1px solid #cdcdcd;
@@ -844,4 +844,345 @@ h6 {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+#chat .Users {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px;
+  height: 89vh;
+  overflow-x: auto;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1882352941);
+  background-color: #fff;
+}
+#chat .Users .UsersHeder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #4b93ff;
+  color: #292929;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#chat .Users .UsersHeder .closeUsers {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  cursor: pointer;
+}
+#chat .Users .UsersHeder .closeUsers i {
+  color: #ffffff;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  #chat .Users {
+    height: 100%;
+    right: 0;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    max-width: 350px;
+    z-index: 9999;
+    overflow: auto;
+    display: none;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: slideInRight !important;
+    animation-delay: 0s;
+  }
+  #chat .Users .UsersHeder {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1254901961);
+  }
+  #chat .Users .UsersHeder .closeUsers {
+    display: flex;
+  }
+}
+#chat .Users ul {
+  display: block;
+  border: none;
+}
+#chat .Users ul li {
+  display: block;
+  margin-bottom: 5px;
+}
+#chat .Users ul li .userInfo {
+  display: flex;
+  background-color: #fff;
+  padding: 10px 5px;
+  border-radius: 2px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #f6f6f6;
+}
+#chat .Users ul li .userInfo img {
+  width: 100px;
+  height: 50px;
+  max-width: 50px !important;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3137254902);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#chat .Users ul li .userInfo .userDiv {
+  color: #777;
+  width: 100%;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+#chat .Users ul li .userInfo .userDiv .nameDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+#chat .Users ul li .userInfo .userDiv .nameDate .name {
+  font-size: 16px;
+  color: #000;
+}
+#chat .Users ul li .userInfo .userDiv .nameDate .date {
+  font-size: 12px;
+}
+#chat .Users ul li .userInfo .userDiv p {
+  margin: 10px 0px 0px;
+  font-size: 12px;
+  overflow: hidden;
+  height: 25px;
+}
+#chat .Users ul li .active .userInfo {
+  background-color: #f6f6f6;
+  border-radius: 3px;
+}
+#chat .chatTop {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1882352941);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background-color: #637790;
+  color: #fff;
+  position: relative;
+}
+#chat .chatTop img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1882352941);
+  margin: 0px 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#chat .chatTop .default-btn {
+  color: #dcb065 !important;
+  border-radius: 0;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+#chat .chatTop .default-btn span {
+  background-color: #292929;
+  color: #ffffff;
+}
+#chat .chatTop .default-btn:hover {
+  color: #ffffff !important;
+}
+#chat .chatBox {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  padding: 10px 10px 50px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1882352941);
+  background-image: url(../images/chat.webp);
+  background-size: contain;
+  height: 80vh;
+}
+#chat .chatBox::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+}
+#chat .chatBox .chatBody {
+  position: relative;
+  z-index: 3;
+  padding: 15px;
+  overflow-x: auto;
+  height: 100%;
+}
+#chat .chatBox .chatBody p {
+  margin: 0px;
+  width: 100%;
+  display: inline-block;
+}
+#chat .chatBox .chatBody .userSend {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+}
+#chat .chatBox .chatBody .userSend img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1882352941);
+  position: relative;
+  right: -10px;
+  top: -5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#chat .chatBox .chatBody .userSend .sendMassage {
+  padding: 10px;
+  background-color: #637790;
+  border-radius: 8px 0px 8px 8px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 25px;
+  min-width: 120px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1882352941);
+}
+#chat .chatBox .chatBody .userSend .sendMassage .time {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: #f0f0f0;
+  font-size: 12px;
+}
+#chat .chatBox .chatBody .userSend .sendMassage:before {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -8px;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #637790 transparent transparent transparent;
+}
+#chat .chatBox .chatBody .userReceive {
+  display: flex;
+  position: relative;
+  margin-right: auto;
+  direction: ltr;
+  text-align: left;
+}
+#chat .chatBox .chatBody .userReceive img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1882352941);
+  position: relative;
+  left: -10px;
+  top: -5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#chat .chatBox .chatBody .userReceive .sendMassage {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0px 8px 8px 8px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #000;
+  display: inline-block;
+  padding-bottom: 25px;
+  min-width: 120px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1882352941);
+}
+#chat .chatBox .chatBody .userReceive .sendMassage .time {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: #c7c7c7;
+  font-size: 12px;
+}
+#chat .chatBox .chatBody .userReceive .sendMassage:before {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: auto;
+  left: -8px;
+  top: 0px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: #fff transparent transparent transparent;
+}
+#chat .chatBox .chat-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  z-index: 4;
+}
+#chat .chatBox .chat-input #chat-input {
+  background: #f4f7f9;
+  width: 100%;
+  position: relative;
+  height: 47px;
+  padding: 10px 15px 10px 50px;
+  border: none;
+  color: #888;
+  overflow: hidden;
+}
+#chat .chatBox .chat-input .chat-submit {
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 50%;
+  color: #637790;
+  transform: scaleX(-1);
+  width: 35px;
+  height: 35px;
+}
+#chat .showUsers {
+  display: block !important;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: slideInRight !important;
+  animation-delay: 0s;
+}
+#chat .hideUsers {
+  display: block !important;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: slideOutRight !important;
+  animation-delay: 0s;
 }/*# sourceMappingURL=custom.min.css.map */
