@@ -373,9 +373,7 @@ $BigShadow: 0px 8px 24px #00000020;
 
 .productSwiper2 {
   img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    max-width: 100%;
   }
 }
 
@@ -434,17 +432,18 @@ $BigShadow: 0px 8px 24px #00000020;
   .choose {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    background-color: #c7d2d6;
     padding: 20px;
     border-radius: 10px;
+    justify-content: space-around;
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 12px;
+    }
     .customerOption {
       width: 100%;
     }
     .btn {
       padding: 15px 20px;
-      // border: 1px solid #d2d6da;
-      // box-shadow: ;
       box-shadow: none;
       width: 96%;
       background-color: $white-color;
@@ -453,33 +452,34 @@ $BigShadow: 0px 8px 24px #00000020;
       height: 100%;
       position: relative;
       transition: $transition;
-      border: 4px solid transparent;
-      img {
+      .img-cs {
         height: 80px;
         width: 80px;
         margin: 0 auto 20px;
-        object-fit: contain;
+        padding: 8px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: .3s ease-in-out;
+        img {
+          object-fit: contain;
+        }
       }
       span {
         text-transform: capitalize;
       }
+      border: none !important;
     }
     .btn-check:active + .btn-outline,
     .btn-check:checked + .btn-outline,
     .btn-outline.active,
     .btn-outline.dropdown-toggle.show,
     .btn-outline:active {
-      background-color: $white-color;
-      color: $mainColor;
-      border: 4px solid $mainColor;
-      &::after {
-        content: "\f336" !important;
-        font-family: "Font Awesome 6 Pro";
-        font-weight: bold;
-        position: absolute;
-        font-size: 20px;
-        top: 5px;
-        right: 10px;
+      border: none !important;
+      .img-cs {
+        background-color: rgb(68, 165, 221);
+        img {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
@@ -626,7 +626,13 @@ $BigShadow: 0px 8px 24px #00000020;
   }
 }
 .statics {
-  background: #e4eaee;
+  // background-image: url(../images/map.webp),
+  //   linear-gradient(rgba(68, 90, 214, 0.472), rgba(77, 72, 169, 0.604));
+  // background-attachment: fixed;
+  // background-size: 100%;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  background: #edf4ff;
   .col-6 {
     border-left: 1px solid #cdcdcd;
     &:last-child {
@@ -654,15 +660,37 @@ $BigShadow: 0px 8px 24px #00000020;
   }
 }
 .imgall {
-  height: 324px;
+  max-height: 260px;
+  &:hover .buttons {
+    width: 70px;
+  }
+  .buttons {
+    transition: all .3s ease-in-out;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 0;
+    overflow: hidden;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 8px;
+        button {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #1da1f2;
+          color: $body-color;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
   img {
-    max-height: 100%;
-    mix-blend-mode: multiply;
+    max-width: 100%;
   }
 }
-// .filterpagecs .imgall {
-//   height: 200px;
-// }
 .social-media {
   position: fixed;
   left: 0;
@@ -771,7 +799,7 @@ $BigShadow: 0px 8px 24px #00000020;
     justify-content: center;
     flex-direction: column;
     transition: all .3s ease-in-out;
-    &:hover{
+    &:hover {
       transform: translateY(-8px);
     }
     h5 {
@@ -798,6 +826,20 @@ $BigShadow: 0px 8px 24px #00000020;
     }
   }
 }
-.txttt{
-width: 180px;
+.txttt {
+  width: 180px;
+}
+.swiper-wrapper {
+  margin-top: 48px;
+}
+.fav-add {
+  background-color: #1da1f2;
+  outline: none;
+  border: none;
+  color: $body-color;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
